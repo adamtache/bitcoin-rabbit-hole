@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main class="main container">
+  <div class="content">
+    <article class="article article--page typeset">
+
+      <ul>
+        {% for post in site.posts %}
+          <a href={{ post.title }}></a>
+        {% endfor %}
+      </ul>
+
+    </article>
+    {% include post-list.html %}
+  </div>
+  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
+</main>
+
+{% include footer.html %}

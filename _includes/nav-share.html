@@ -1,0 +1,17 @@
+<div class="share">
+  {% for network in site.sharing_links %}
+    {% assign name = network[0] %}
+    {% assign id = network[0] | downcase | remove: " " %}
+    {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% assign color = network[1] %}
+
+    {% capture share_link %}
+      {%- if id contains "twitter" %}https://twitter.com/intent/tweet/?url={{ url }}&text={{ page.title | uri_escape }}{% if site.twitter.username %}&via={{ site.twitter.username }}{% endif %}{% endif -%}
+      {%- if id contains "reddit" %}https://reddit.com/submit?url={{ url }}&title={{ page.title }}&resubmit=true{% endif -%}
+      {%- if id contains "hackernews" %}https://news.ycombinator.com/submitlink?u={{ url }}&t={{ page.title }}{% endif -%}
+      {%- if id contains "email" %}mailto:?subject={{ page.title }}&body={{ url | prepend: "Learn about Bitcoin: "}}{% endif -%}
+    {% endcapture %}
+
+    {% include button.html text=name icon=id link=share_link color=color %}
+  {% endfor %}
+</div>
