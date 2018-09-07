@@ -26,10 +26,12 @@ social:
     - https://twitter.com/adam_tache
 
 sass:
+  add_charset: true
+  excerpt_separator: <!-- more -->
+  permalink: pretty
+  sass_dir: assets/sass
   style: compressed
-permalink: pretty
-excerpt_separator: <!-- more -->
-timezone: Europe/London
+  timezone: Europe/London
 
 collections:
   posts:
