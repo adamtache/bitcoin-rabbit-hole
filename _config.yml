@@ -1,0 +1,76 @@
+exclude:
+- CNAME
+- Gemfile
+- Gemfile.lock
+- btc.gemspec
+
+plugins:
+- jekyll-sitemap
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jemoji
+- jekyll-postfiles
+
+paginate: 2
+paginate_path: blog/page:num
+jekyll-mentions: https://twitter.com
+twitter:
+  username: adam_tache
+author: adam_tache
+social:
+  name: Adam Tache
+  links:
+    - https://twitter.com/adam_tache
+
+sass:
+  style: compressed
+permalink: pretty
+excerpt_separator: <!-- more -->
+timezone: Europe/London
+
+collections:
+  posts:
+    title: Posts
+    output: true
+    description: "BTC"
+    feature_text: |
+      BTC
+    # feature_image: TODO
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "/assets/default-social-image.png"
+
+encoding: utf-8
+lang: en-US
+title: "BTC"
+logo: "/assets/logo.svg"
+description: "BTC"
+url: ""
+baseurl: ""
+email: "adamtache@gmail.com"
+# avatarurl: TODO
+css_inline: true
+
+navigation_footer:
+  BTC:
+
+menu_items:
+  Home: /
+  Blog: /blog/
+  About: /about/
+
+social_links:
+  Twitter: https://twitter.com/adam_tache
+  GitHub: https://github.com/adamtache
+  RSS: /feed.xml
+
+sharing_links:
+  Twitter: "#0d94e7"
+  Hacker News: "#ff6600"
