@@ -64,7 +64,11 @@ navigation_footer:
 menu_items:
   Home: /
   Blog: /blog/
-  About: /about/
+  Research: /research/
+  Articles: /articles/
+  Podcasts: /podcasts/
+  Newsletters: /newsletters/
+  Projects: /projects/
 
 social_links:
   Twitter: https://twitter.com/adam_tache
