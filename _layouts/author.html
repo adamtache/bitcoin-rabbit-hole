@@ -6,17 +6,22 @@ layout: default
 
 <main class="main container">
 
-  <div class="author_page">
+  <div class="page-header">
 
     <h1>{{ page.name }}</h1>
 
     <h2>Posts by this author</h2>
+    <br/>
+    <hr>
     {%- assign author_posts = site.posts
       | where: "author", page.name -%}
     {%- for post in author_posts -%}
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url }}">{{ post.title }}</a>&nbsp;&middot;&nbsp;<time datetime="{{ post.date | date_to_xmlschema }}" class="time">{{ post.date | date_to_string }}</time>
     <hr>
     {%- endfor -%}
+
+    <br/>
+    {% include button.html text="All authors" link="/authors" %}
   </div>
 
 </main>

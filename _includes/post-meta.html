@@ -10,7 +10,7 @@
     By:
     {% for author in page.author %}
       {% assign author_object = site.authors | where: "name", author | first %}
-        <a href="{{ site.baseurl }}/author/{{author_object.slug}}"> {{ author }} </a>
+        <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }} </a>
       {% unless forloop.last %} and {% endunless %}
     {% endfor %}
     &nbsp;&middot;&nbsp;

@@ -1,10 +1,10 @@
 {% for author in site.authors %}
-  <section class="section typeset">
+  <a href="{{ author.url }}"> {{ author.name }} </a>
+  &nbsp;&middot;&nbsp;
 
-    <ul class="author author--posts">
-      <a href="{{ author.url }}"> {{ author.name }} </a>
-      <br>
-    </ul>
-    {% unless forloop.last %}<hr/>{% endunless %}
-  </section>
+  {%- assign author_posts = site.posts
+    | where: "author", author.name -%}
+  {{ author_posts.size }} posts
+
+  {% unless forloop.last %}<hr/>{% endunless %}
 {% endfor %}
