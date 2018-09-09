@@ -35,10 +35,20 @@ sass:
   style: compressed
   timezone: Europe/London
 
+collections_dir: collections
 collections:
   posts:
     title: Posts
     output: true
+  projects:
+    output: true
+    permalink: /podcasts/
+  multimedia:
+    output: true
+    permalink: /multimedia/
+  writings:
+    output: true
+    permalink: /writings/
 
 encoding: utf-8
 lang: en-US
