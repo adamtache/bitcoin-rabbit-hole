@@ -1,0 +1,10 @@
+{% for author in site.authors %}
+  <section class="section typeset">
+
+    <ul class="author author--posts">
+      <a href="{{ author.url }}"> {{ author.name }} </a>
+      <br>
+    </ul>
+    {% unless forloop.last %}<hr/>{% endunless %}
+  </section>
+{% endfor %}

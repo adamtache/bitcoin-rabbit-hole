@@ -40,6 +40,10 @@ collections:
   posts:
     title: Posts
     output: true
+  authors:
+    title: Authors
+    permalink: /authors/
+    output: true
   projects:
     title: Projects
     output: true
@@ -52,6 +56,14 @@ collections:
     title: Writings
     output: true
     permalink: /writings/
+
+defaults:
+  - scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
+      permalink: /authors/:slug
 
 encoding: utf-8
 lang: en-US
