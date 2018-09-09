@@ -251,10 +251,6 @@ img {
   }
 }
 
-.map {
-  padding-bottom: 70%;
-}
-
 .figure,
 .video,
 .map,
@@ -265,18 +261,6 @@ img {
 audio,
 video {
   width: 100%;
-}
-
-.form {
-  position: relative;
-  &__legend {
-    font-style: italic;
-    color: $captionColour;
-    position: absolute;
-    overflow: hidden;
-    right: 0;
-    clip: rect(0 0 0 0);
-  }
 }
 
 button,
@@ -298,25 +282,6 @@ select {
   -webkit-appearance: none;
   .icon {
     margin: 0 0 .35rem;
-  }
-}
-
-input[type="submit"],
-button,
-.button {
-  cursor: pointer;
-  display: inline-block;
-  color: $backgroundColour;
-  background: $accentColour;
-  transition: box-shadow .1s;
-  will-change: box-shadow;
-  box-shadow: inset 0 0 0 2rem transparent;
-  &:hover {
-    box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.25);
-  }
-  &:active,
-  &:focus {
-    box-shadow: inset 0 0 0 2rem rgba(0,0,0,0.25);
   }
 }
 
