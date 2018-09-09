@@ -6,10 +6,6 @@ categories: Bitcoin
 author: [Adam Tache, Murad Mahmudov]
 introduction: This is a follow-up to The Many Faces of Bitcoin, which discussed four schools of thought of Bitcoin. This article will analyze these perspectives by discussing trade-offs, philosophical divides within the community, and expected behaviors of the proposed systems.
 ---
-
-By [Murad Mahmudov](https://twitter.com/muststopmurad) and [Adam
-Taché](https://twitter.com/adam_tache).
-
 This is a follow-up to [The Many Faces of
 Bitcoin](https://hackernoon.com/the-many-faces-of-bitcoin-1c298570d191), which
 discussed four schools of thought of Bitcoin. This article will analyze these

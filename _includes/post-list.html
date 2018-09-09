@@ -3,9 +3,9 @@
     <ul class="list list--posts">
       {% for page in paginator.posts %}
         <li class="item item--post">
-          <article class="article  article--post">
+          <article class="article article--post">
 
-            <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
+            <h3><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
             {% include post-meta.html %}
             {{ page.excerpt | markdownify | truncatewords: 40 }}
 
@@ -22,7 +22,7 @@
         <li class="item item--post">
           <article class="article article--post">
 
-            <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
+            <h3><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h3>
             {% include post-meta.html %}
             {{ page.excerpt | markdownify | truncatewords: 40 }}
 

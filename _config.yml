@@ -63,7 +63,7 @@ defaults:
       type: authors
     values:
       layout: author
-      permalink: /authors/:slug
+      permalink: /authors/:slug/
 
 encoding: utf-8
 lang: en-US

@@ -6,10 +6,6 @@ categories: Bitcoin
 author: [Adam Tache, Murad Mahmudov]
 introduction: To nocoiners, gold-bugs, and Keynesians, the cryptocurrency space is best seen as a parasite infecting millennials with technobabble, forcing them to spout economic gibberish, and sucking them into believing the pipedream that a crypto-anarchist society could exist. To believers in the technology, cryptocurrencies represent an escape from the imprisonment of the traditional financial system in which they are forced to participate by being born; a system which has been plagued by inflationary monetary policy, monopoly by nation-states on money creation, malinvestment, and debt. To believers, cryptocurrencies are a starting point to rebuild honesty and a true measure of value in society among borderless, apolitical and decentralized systems.
 ---
-
-By [Murad Mahmudov](https://twitter.com/muststopmurad) and [Adam
-Taché](https://twitter.com/adam_tache).
-
 The most prominent and powerful of the cryptocurrency communities — the Bitcoin
 community — has fractured into multiple factions based on desires for various
 directions to take the protocol and tribalism over different projects

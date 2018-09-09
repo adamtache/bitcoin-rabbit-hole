@@ -1,15 +1,28 @@
 {% if page.categories %}
   {% capture categories %}
-    {% for category in page.categories %}
-      <span class="label label--category"><a href="{{ site.baseurl }}/categories/#{{ category | downcase }}">{{ category }}</a></span>{% if forloop.last == false %},{% endif %}
-    {% endfor %}
-  {% endcapture %}
-{% elsif page.category %}
-  {% capture categories %}
-    <span class="label label--category"><a href="{{ site.baseurl }}/categories/#{{ page.category | downcase }}">{{ page.category }}</a></span>
   {% endcapture %}
 {% endif %}
 
 <small class="small post-meta">
-  {{ categories | append: "&nbsp;&middot;&nbsp;" }}<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time>
+
+  <div class="author-meta">
+
+    By:
+    {% for author in page.author %}
+      {% assign author_object = site.authors | where: "name", author | first %}
+        <a href="{{ site.baseurl }}/author/{{author_object.slug}}"> {{ author }} </a>
+      {% unless forloop.last %} and {% endunless %}
+    {% endfor %}
+    &nbsp;&middot;&nbsp;
+    <time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time>
+
+    &nbsp;&middot;&nbsp;
+
+    {{ categories | append: &nbsp;&middot;&nbsp; }}
+
+    {% for category in page.categories %}
+      <span class="label label--category"><a href="{{ site.baseurl }}/categories/#{{ category | downcase }}">#{{ category }}</a></span>{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  </div>
+
 </small>

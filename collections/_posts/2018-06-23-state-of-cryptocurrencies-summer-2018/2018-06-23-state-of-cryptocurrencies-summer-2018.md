@@ -3,14 +3,9 @@ layout: post
 title: State of Cryptocurrencies Summer 2018
 date: 2018-06-23
 categories: [Bitcoin, Altcoins]
-author: [Adam Tache, Murad Mahmudov]
+author: Adam Tache
 introduction: This article will provide a comprehensive overview of the current state of the cryptocurrency ecosystem as of Summer 2018.
 ---
-
-by [Adam Taché](https://twitter.com/adam_tache).
-
-### Foreword
-
 This article will provide a comprehensive overview of the current state of the
 cryptocurrencyecosystem as of Summer 2018.
 
