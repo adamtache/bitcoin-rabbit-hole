@@ -1,0 +1,14 @@
+---
+title: multimedia
+layout: list
+permalink: /multimedia/
+content_type: multimedia
+---
+
+<ul>
+  {% for multimedia in site.multimedia %}
+    <li>
+      <a href="{{ multimedia.url }}">{{ multimedia.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

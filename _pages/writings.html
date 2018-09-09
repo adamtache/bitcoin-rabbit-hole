@@ -1,0 +1,14 @@
+---
+layout: list
+title: Writings
+permalink: /writings/
+content_type: writings
+---
+
+<ul>
+  {% for writing in site.writings %}
+    <li>
+      <a href="{{ writing.url }}">{{ writing.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

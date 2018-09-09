@@ -14,8 +14,10 @@ plugins:
 - jemoji
 - jekyll-postfiles
 
-paginate: 2
-paginate_path: blog/page:num
+include: ['_pages']
+
+paginate: 3
+paginate_path: _pages/page:num
 jekyll-mentions: https://twitter.com
 twitter:
   username: adam_tache
@@ -37,17 +39,6 @@ collections:
   posts:
     title: Posts
     output: true
-    description: "BTC"
-    feature_text: |
-      BTC
-    # feature_image: TODO
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      image: "/assets/default-social-image.png"
 
 encoding: utf-8
 lang: en-US
@@ -65,12 +56,10 @@ navigation_footer:
 
 menu_items:
   Home: /
-  Blog: /blog/
-  Research: /research/
-  Articles: /articles/
-  Podcasts: /podcasts/
-  Newsletters: /newsletters/
+  Writings: /writings/
+  Multimedia: /multimedia/
   Projects: /projects/
+  Blog: /blog/
 
 social_links:
   Twitter: https://twitter.com/adam_tache
