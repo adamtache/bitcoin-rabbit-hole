@@ -44,10 +44,10 @@ collections:
     title: Authors
     permalink: /authors/
     output: true
-  projects:
-    title: Projects
+  projects_and_companies  :
+    title: Projects and Companies
     output: true
-    permalink: /projects/
+    permalink: /projects_and_companies/
   multimedia:
     title: Multimedia
     output: true
@@ -83,7 +83,7 @@ menu_items:
   Home: /
   Writings: /writings/
   Multimedia: /multimedia/
-  Projects: /projects/
+  Projects & Companies: /projects_and_companies/
   Blog: /blog/
 
 social_links:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bitcoin Past and Future
+title: Bitcoin&#58; Past and Future
 date: 2018-05-30
 categories: Bitcoin
 author: [Adam Tache, Murad Mahmudov]

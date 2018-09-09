@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State of Cryptocurrencies Summer 2018
+title: State of Cryptocurrencies&#58; Summer 2018
 date: 2018-06-23
 categories: [Bitcoin, Altcoins]
 author: Adam Tache
