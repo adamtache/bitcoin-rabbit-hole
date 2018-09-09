@@ -4,7 +4,7 @@ title: Bitcoin Past and Future
 date: 2018-05-30
 categories: Bitcoin
 author: [Adam Tache, Murad Mahmudov]
-introduction: This is a follow-up to The Many Faces of Bitcoin, which discussed four schools of thought of Bitcoin. This article will analyze these perspectives by discussing trade-offs, philosophical divides within the community, and expected behaviors of the proposed systems.
+excerpt: Analyzes four schools of thought of Bitcoin by discussing trade-offs, philosophical divides within the community, and expected behaviors of the proposed systems.
 ---
 This is a follow-up to [The Many Faces of
 Bitcoin](https://hackernoon.com/the-many-faces-of-bitcoin-1c298570d191), which
