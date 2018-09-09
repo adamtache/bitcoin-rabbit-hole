@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main class="main container">
+  <div class="content">
+    <article class="writings">
+
+      <ul>
+        {% for writing in site.writings %}
+          <a href={{ writing.title }}></a>
+        {% endfor %}
+      </ul>
+
+    </article>
+  </div>
+</main>
+
+{% include footer.html %}

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% include header.html %}
+{% assign author = site.data.authors[page.author] %}
+
+<main class="main container">
+  <article class="media content typeset">
+
+    <h1>
+      {{ page.title }} {% include post-meta.html %}
+    </h1>
+
+  </article>
+</main>
+
+{% include footer.html %}

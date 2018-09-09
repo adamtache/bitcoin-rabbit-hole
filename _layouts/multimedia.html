@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main class="main container">
+  <div class="content">
+    <article class="multimedia">
+
+      <ul>
+        {% for media in site.multimedia %}
+          <a href={{ media.title }}></a>
+        {% endfor %}
+      </ul>
+
+    </article>
+  </div>
+  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
+</main>
+
+{% include footer.html %}

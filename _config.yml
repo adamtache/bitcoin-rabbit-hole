@@ -41,12 +41,15 @@ collections:
     title: Posts
     output: true
   projects:
+    title: Projects
     output: true
-    permalink: /podcasts/
+    permalink: /projects/
   multimedia:
+    title: Multimedia
     output: true
     permalink: /multimedia/
   writings:
+    title: Writings
     output: true
     permalink: /writings/
 
