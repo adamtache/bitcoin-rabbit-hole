@@ -2,23 +2,16 @@
 layout: default
 ---
 
-{% include header.html %}
-
 <main class="main container">
   <div class="content">
-    <article class="page-header">
+    {% include page-header.html %}
 
-      <h1>{{ page.title }}</h1>
-      <hr>
-      <p>{{ page.introduction }}</p>
+    <ul>
+      {% for post in site.posts %}
+        <a href={{ post.title }}></a>
+      {% endfor %}
+    </ul>
 
-      <ul>
-        {% for post in site.posts %}
-          <a href={{ post.title }}></a>
-        {% endfor %}
-      </ul>
-
-    </article>
     {% include post-list.html %}
   </div>
   {% if page.aside == true %}{% include site-aside.html %}{% endif %}

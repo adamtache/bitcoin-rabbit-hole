@@ -2,15 +2,9 @@
 layout: default
 ---
 
-{% include header.html %}
-
 <main class="main container">
   <div class="content">
-    <article class="page-header">
-
-      <h1>{{ page.title }}</h1>
-      <hr>
-      <p>{{ page.introduction }}</p>
+    {% include page-header.html %}
 
       <ul>
         {% for writing in site.writings %}
@@ -18,7 +12,6 @@ layout: default
         {% endfor %}
       </ul>
 
-    </article>
   </div>
 </main>
 
