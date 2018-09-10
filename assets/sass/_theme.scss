@@ -161,6 +161,10 @@ body {
   margin: 0;
 }
 
+.about {
+  font-size: 18px;
+}
+
 .list {
   list-style: none;
   &--nav {
@@ -182,6 +186,36 @@ body {
     margin-bottom: .8rem;
     margin-top: 0.5rem;
   }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.resource-page {
+  text-align: center;
+
+  hr {
+    width: 36%;
+  }
+}
+
+.authors-page {
+  text-align: center;
+
+  hr {
+    width: 36%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.source-link {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.resource-list-meta {
+  font-size: 17px;
 }
 
 .item {

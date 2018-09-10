@@ -1,14 +1,10 @@
 ---
 title: Multimedia
-layout: multimedia
+layout: page
 permalink: /multimedia/
 introduction: Bitcoin podcasts, newsletters, and videos.
 ---
 
-<ul>
-  {% for multimedia in site.multimedia %}
-    <li>
-      <a href="{{ multimedia.url }}">{{ multimedia.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="content">
+  {% include multimedia-list.html %}
+</div>

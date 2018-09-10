@@ -1,10 +1,24 @@
-{% for author in site.authors %}
-  <a href="{{ author.url }}"> {{ author.name }} </a>
-  &nbsp;&middot;&nbsp;
+<div class="authors-page">
+  {% for author in site.authors %}
+    <a href="{{ author.url }}"> {{ author.name }}</a>
+    {% include space-dot-space.html %}
 
-  {%- assign author_posts = site.posts
-    | where: "author", author.name -%}
-  {{ author_posts.size }} posts
+    {% assign total_works = 0 %}
+    {%- assign author_posts = site.posts
+      | where: "author", author.name -%}
+    {%- assign total_works = total_works | plus: author_posts.size -%}
 
-  {% unless forloop.last %}<hr/>{% endunless %}
-{% endfor %}
+    {%- assign author_writings = site.writings
+      | where: "author", author.name -%}
+    {%- assign total_works = total_works | plus: author_writings.size -%}
+
+    {% if total_works > 1 %}
+      {{ total_works }} works
+    {% endif %}
+
+    {% if total_works == 1 %}
+      {{ total_works }} work
+    {% endif %}
+    <br/>
+  {% endfor %}
+</div>

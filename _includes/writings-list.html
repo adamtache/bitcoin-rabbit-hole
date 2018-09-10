@@ -1,0 +1,25 @@
+<div class="resource-page">
+  <section class="section typeset">
+    <ul class="list list--posts">
+      {% for writing in site.writings %}
+        <li class="item item--post">
+          <article class="article article--post">
+
+            <div class="resource-list-meta">
+              <h4><a href="{{ writing.url }}">{{ writing.title }}</a></h4>
+              By
+              {% for author in writing.author %}
+                {% assign author_object = site.authors | where: "name", author | first %}
+                <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
+                {% unless forloop.last %} and {% endunless %}
+              {% endfor %}
+
+              {% include space-dot-space.html %}
+              <time datetime="{{ writing.date | date_to_xmlschema }}" class="time">{{ writing.date | date_to_string }}</time>
+            </div>
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

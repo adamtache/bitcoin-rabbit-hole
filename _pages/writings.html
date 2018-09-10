@@ -1,14 +1,10 @@
 ---
 title: Writings
-layout: writings
+layout: page
 permalink: /writings/
 introduction: Articles, papers, and books to learn about Bitcoin.
 ---
 
-<ul>
-  {% for writing in site.writings %}
-    <li>
-      <a href="{{ writing.url }}">{{ writing.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="content">
+  {% include writings-list.html %}
+</div>

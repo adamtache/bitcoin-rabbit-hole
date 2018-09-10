@@ -1,14 +1,10 @@
 ---
 title: Blog
-layout: blog
+layout: page
 permalink: /blog/
-introduction: Some of our own featured content.
+introduction: Our own featured articles.
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="content">
+  {% include post-list.html %}
+</div>

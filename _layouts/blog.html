@@ -3,18 +3,7 @@ layout: default
 ---
 
 <main class="main container">
-  <div class="content">
-    {% include page-header.html %}
-
-    <ul>
-      {% for post in site.posts %}
-        <a href={{ post.title }}></a>
-      {% endfor %}
-    </ul>
-
-    {% include post-list.html %}
-  </div>
-  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
+  {{ content }}
 </main>
 
 {% include footer.html %}

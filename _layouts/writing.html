@@ -2,16 +2,20 @@
 layout: default
 ---
 
-{% assign author = site.data.authors[page.author] %}
-
 <main class="main container">
-  <article class="writing content typeset">
+  <article class="article article--post content typeset">
+    <div class="resource-page">
 
-    <h1>
-      {{ page.title }} {% include post-meta.html %}
-    </h1>
+      <h3> {{ page.title }} </h3>
+      <h6> "{{ page.excerpt }}" </h6>
+      <div class="source-link">
+        <a href="{{ page.external_url }}"> Source </a>
+      </div>
 
+      {% include resource-meta.html %}
+    </div>
   </article>
+  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
 </main>
 
 {% include footer.html %}

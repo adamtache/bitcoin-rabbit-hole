@@ -1,14 +1,10 @@
 ---
 title: Projects & Companies
-layout: projects_and_companies
+layout: page
 permalink: /projects_and_companies/
 introduction: Built on Bitcoin.
 ---
 
-<ul>
-  {% for project in site.projects %}
-    <li>
-      <a href="{{ project.url }}">{{ project.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="content">
+  {% include projects-and-companies-list.html %}
+</div>
