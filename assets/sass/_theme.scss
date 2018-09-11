@@ -13,8 +13,7 @@ body {
   margin: 0 auto;
 }
 
-.header,
-.footer {
+header {
   .nav {
     text-align: right;
   }
@@ -82,6 +81,7 @@ body {
 .footer {
   background: $headingColour;
   color: $captionColour;
+
   a {
     color: $captionColour;
     &:hover {
@@ -89,10 +89,15 @@ body {
     }
   }
   .container {
-    @include flex-wrap(wrap);
+    // @include flex-wrap(wrap);
+    padding: 1rem 0;
+    display: flex;
   }
-  .small {
-    padding-top: 0;
+  .copyright {
+    margin-left: 5%;
+  }
+  .footer-links {
+    margin-left: auto;
   }
 }
 
@@ -120,8 +125,7 @@ body {
 }
 
 .header,
-.feature,
-.footer {
+.feature {
   @include flex(0, 0, auto);
 }
 

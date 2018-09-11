@@ -243,6 +243,10 @@ a {
     font-style: map-get($bodytype, italic);
   }
 
+  .copyright {
+    font-weight: 300;
+  }
+
   // Caption and inline small text.
   small, .caption {
     @include fontsize(theta, all);
