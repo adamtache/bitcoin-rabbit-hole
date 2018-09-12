@@ -7,12 +7,17 @@ layout: default
     <div class="resource-page">
 
       <h3> {{ page.title }} </h3>
-      {% if page.excerpt != "" and page.excerpt != blank %}
+      {% if page.excerpt == "" or page.excerpt == blank %}
+        <div class="source-link-no-excerpt">
+          <a href="{{ page.external_url }}"> Source </a>
+        </div>
+      {% else %}
         <h6> "{{ page.excerpt }}" </h6>
+
+        <div class="source-link">
+          <a href="{{ page.external_url }}"> Source </a>
+        </div>
       {% endif %}
-      <div class="source-link">
-        <a href="{{ page.external_url }}"> Source </a>
-      </div>
 
       {% include resource-meta.html %}
     </div>
