@@ -12,6 +12,10 @@
       | where: "author", author.name -%}
     {%- assign total_works = total_works | plus: author_writings.size -%}
 
+    {%- assign author_medias = site.multimedia
+      | where: "author", author.name -%}
+    {%- assign total_works = total_works | plus: author_medias.size -%}
+
     {% if total_works > 1 %}
       {{ total_works }} works
     {% endif %}

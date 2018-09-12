@@ -3,6 +3,8 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - btc.gemspec
+- collections/spreadsheet_to_resource_mds/__pycache__/
+- collections/spreadsheet_to_resource_mds/env
 
 plugins:
 - jekyll-sitemap
@@ -70,6 +72,12 @@ defaults:
     values:
       layout: writing
       permalink: /writings/:title/
+  - scope:
+      path: ""
+      type: multimedia
+    values:
+      layout: media
+      permalink: /multimedia/:title/
 
 encoding: utf-8
 lang: en-US

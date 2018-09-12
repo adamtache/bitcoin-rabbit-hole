@@ -24,6 +24,13 @@ layout: default
     <hr>
     {%- endfor -%}
 
+    {%- assign author_medias = site.multimedia
+      | where: "author", page.name -%}
+    {%- for media in author_medias -%}
+    <a href="{{ media.url }}">{{ media.title }}</a>{% include space-dot-space.html %}<time datetime="{{ media.date | date_to_xmlschema }}" class="time">{{ media.date | date_to_string }}</time>
+    <hr>
+    {%- endfor -%}
+
     <br/>
     {% include button.html text="All authors" link="/authors" %}
 
