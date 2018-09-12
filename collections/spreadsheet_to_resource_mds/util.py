@@ -1,7 +1,9 @@
 #! /usr/bin/python3
-from goose3 import Goose
-
+#-*- coding: UTF-8 -*-
 import re
+import unidecode
+
+from goose3 import Goose
 
 GRAB_FIRST_TWO_SENTENCES_RE = '[.!?][\s]{1,2}(?=[A-Z])'
 REMOVE_SPECIAL_CHARACTERS_RE = '[^a-zA-Z0-9-_*.]'
@@ -30,9 +32,9 @@ def get_first_two_sentences_from_page(url):
     elif "Get YouTube without the ads" in sentences[0]:
         return EMPTY
     elif len(sentences) > 1:
-        return sentences[0] + PERIOD + sentences[1] + PERIOD
+        return (sentences[0] + PERIOD + sentences[1] + PERIOD).replace(COLON, EMPTY)
     else:
-        return sentences[0] + PERIOD
+        return (sentences[0] + PERIOD).replace(COLON, EMPTY)
 
 def title_to_file_path(title, resource_type):
     resources_folder_path = "../_"
@@ -46,9 +48,25 @@ def title_to_file_path(title, resource_type):
             _camel_case_to_dashed(title),
             MARKDOWN_SUFFIX)
 
+def author_to_file_path(valid_author_slug):
+    """ Replaces extraneous symbols and cleans up accents and umlauts
+        in author names. """
+    return "{}{}{}".format(
+        "../_authors/",
+        valid_author_slug,
+        MARKDOWN_SUFFIX)
+
+def get_valid_author_slug(author):
+    return unidecode.unidecode(_remove_extraneous_symbols(
+            re.sub(' ', '-', author.strip()).lower()))
+
 def _camel_case_to_dashed(title):
-    return re.sub(
-                REMOVE_SPECIAL_CHARACTERS_RE,
-                EMPTY,
+    return _remove_extraneous_symbols(
                 re.sub('([a-z0-9])([A-Z])', r'\1-\2',
                 re.sub('(.)([A-Z][a-z]+)',r'\1-\2', title))).lower()
+
+def _remove_extraneous_symbols(str):
+    return re.sub(
+        '-+',
+        '-',
+        re.sub(REMOVE_SPECIAL_CHARACTERS_RE, "", str))

@@ -4,7 +4,7 @@ import json
 import re
 
 from oauth2client.service_account import ServiceAccountCredentials
-from util import get_first_two_sentences_from_page, title_to_file_path
+from util import author_to_file_path, get_first_two_sentences_from_page, get_valid_author_slug, title_to_file_path
 
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
@@ -25,6 +25,20 @@ for row in sheet.get_all_values():
     resource_url = row[4]
     resource_date = "2009-01-03" # TODO
     resource_excerpt = get_first_two_sentences_from_page(resource_url)
+
+    for author in resource_authors:
+        author_slug = get_valid_author_slug(author)
+
+        author_file = (
+            f"---\n"
+            f"name: {author.strip()}\n"
+            f"slug: {author_slug}\n"
+            f"permalink: /author/{author_slug}\n"
+            f"---")
+
+        author_file_path = author_to_file_path(author_slug)
+        with open(author_file_path, 'w') as f:
+            f.write(author_file)
 
     md_file = (
                 f"---\n"

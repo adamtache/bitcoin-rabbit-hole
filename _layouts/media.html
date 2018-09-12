@@ -7,7 +7,7 @@ layout: default
     <div class="resource-page">
 
       <h3> {{ page.title }} </h3>
-      {% if page.excerpt == "" or page.excerpt == blank %}
+      {% if page.excerpt == "" or page.excerpt == blank or page.excerpt.size < 5 %}
         <div class="source-link-no-excerpt">
           <a href="{{ page.external_url }}"> Source </a>
         </div>
