@@ -9,18 +9,18 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 header {
-  .nav {
-    text-align: right;
-  }
+  padding-bottom: 3rem;
+
   .logo {
     @include flex(0 0 auto);
   }
   .container {
+    background-color: $headerBackgroundColour;
     @include flexbox;
     @include flex-direction(row);
     @include justify-content(space-between);
@@ -28,33 +28,43 @@ header {
     @include breakpoint(break-1) {
       @include align-items(center);
     }
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
   }
 }
 
 .header .nav {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feature {
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
   margin-bottom: 1.6rem;
   text-align: center;
-  background: $featureBackgroundColour;
-  background-size: cover;
-  background-position: center;
-  .container {
-    min-height: 35vh;
-    max-width: 60%;
-    @include flex-direction(column);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: auto;
+  height: auto;
+  min-height: 300px;
+  position: relative;
+
+  .feature_bg {
+    @include flex-direction(row);
     @include justify-content(center);
+    background-repeat: repeat-x;
+    background-size: contain;
+    min-width: 100%;
+    min-height: 300px;
+    position: absolute;
+    z-index: -1;
   }
 }
 
 .logo {
   display: inline-block;
-  line-height: 0;
   max-height: 4rem;
   @include flexbox;
   @include align-items(center);
@@ -79,7 +89,7 @@ header {
 }
 
 .footer {
-  background: $headingColour;
+  background: $footerBackgroundColour;
   color: $captionColour;
 
   a {
@@ -135,6 +145,13 @@ header {
   }
 }
 
+.homepage-content {
+  @include breakpoint(break-1) {
+    width: 62%;
+  }
+  text-align: center;
+}
+
 .share .button {
   margin-right: .3rem;
 }
@@ -188,12 +205,38 @@ header {
   h1 {
     font-size: 50px;
     margin-bottom: .8rem;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
   }
 
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
+}
+
+.home-buttons-top {
+  display: flex;
+  height: 50%;
+}
+
+.home-buttons-bottom {
+  display: flex;
+  height: 50%;
+}
+
+.home-buttons-left {
+  float: left;
+  flex: 40%;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.home-buttons-right {
+  float: right;
+  flex: 40%;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 .resource-page {
@@ -201,6 +244,10 @@ header {
 
   hr {
     width: 36%;
+  }
+
+  li {
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -225,6 +272,10 @@ header {
 
 .resource-list-meta {
   font-size: 17px;
+
+  h4 {
+    margin-bottom: 0.25rem;
+  }
 }
 
 .item {
@@ -454,5 +505,13 @@ pre code {
   pre {
     white-space: pre;
     overflow-x: scroll;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .feature {
+    .feature_bg {
+      display: none;
+    }
   }
 }

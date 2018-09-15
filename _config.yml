@@ -81,9 +81,9 @@ defaults:
 
 encoding: utf-8
 lang: en-US
-title: "Learn Bitcoin"
-logo: "/assets/logo.svg"
-description: "Learn Bitcoin"
+title: "Bitcoin Rabbit Hole"
+# logo: "/assets/logo.svg"
+description: "Bitcoin Rabbit Hole"
 url: ""
 baseurl: ""
 email: "adamtache@gmail.com"
