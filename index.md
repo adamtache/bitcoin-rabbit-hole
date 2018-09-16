@@ -7,14 +7,10 @@ layout: homepage
 <div class="homepage-content">
   <div class="home-buttons-top">
     <div class="home-buttons-left">
-      <div class="writing-button">
-        <a href="/writings"> {% include figure.html image="assets/graphics/essays_research.png" position="left" %} </a>
-      </div>
+      <a href="/writings"> <div class="writing-button"> </div> </a>
     </div>
     <div class="home-buttons-right">
-      <div class="multimedia-button">
-        <a href="/multimedia"> {% include figure.html image="assets/graphics/videos_media.png" position="right" %} </a>
-      </div>
+      <a href="/multimedia"> <div class="multimedia-button"> </div> </a>
     </div>
   </div>
 
@@ -22,14 +18,10 @@ layout: homepage
 
   <div class="home-buttons-bottom">
     <div class="home-buttons-left">
-      <div class="projects-companies-button">
-        <a href="/projects_and_companies"> {% include figure.html image="assets/graphics/projects_companies.png" position="left" %} </a>
-      </div>
+      <a href="/projects_and_companies"> <div class="projects-companies-button"></div> </a>
     </div>
     <div class="home-buttons-right">
-      <div class="blog-button">
-        <a href="/blog"> {% include figure.html image="assets/graphics/theblog.png" position="right" %} </a>
-      </div>
+      <a href="/blog"> <div class="blog-button"> </div> </a>
     </div>
   </div>
 
