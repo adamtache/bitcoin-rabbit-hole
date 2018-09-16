@@ -16,6 +16,10 @@ body {
 header {
   padding-bottom: 1rem;
 
+  a:hover {
+    color: $backgroundColour;
+  }
+
   .logo {
     @include flex(0 0 auto);
   }
