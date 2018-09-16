@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 
   .logo {
     @include flex(0 0 auto);
@@ -25,9 +25,6 @@ header {
     @include flex-direction(row);
     @include justify-content(space-between);
     padding: 1rem 0;
-    @include breakpoint(break-1) {
-      @include align-items(center);
-    }
     width: 100%;
     height: 100%;
     max-width: 100%;
@@ -146,10 +143,8 @@ header {
 }
 
 .homepage-content {
-  @include breakpoint(break-1) {
-    width: 62%;
-  }
   text-align: center;
+  max-width: 800px;
 }
 
 .share .button {
@@ -221,22 +216,23 @@ header {
 .home-buttons-bottom {
   display: flex;
   height: 50%;
+  margin-bottom: 2rem;
 }
 
 .home-buttons-left {
   float: left;
-  flex: 40%;
-  padding: 10px;
   height: 100%;
   width: 100%;
 }
 
 .home-buttons-right {
   float: right;
-  flex: 40%;
-  padding: 10px;
   height: 100%;
   width: 100%;
+}
+
+.blog-button:hover {
+  background: url("assets/graphics.theblog_hover.png")
 }
 
 .resource-page {
@@ -510,6 +506,7 @@ pre code {
 
 @media only screen and (max-width: 500px){
   .feature {
+    max-height: 100px;
     .feature_bg {
       display: none;
     }
