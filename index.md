@@ -8,12 +8,12 @@ layout: homepage
   <div class="home-buttons-top">
     <div class="home-buttons-left">
       <div class="writing-button">
-        <a href="/writings"> {% include figure.html image="assets/graphics/writings.png" position="left" %} </a>
+        <a href="/writings"> {% include figure.html image="assets/graphics/essays_research.png" position="left" %} </a>
       </div>
     </div>
     <div class="home-buttons-right">
       <div class="multimedia-button">
-        <a href="/multimedia"> {% include figure.html image="assets/graphics/multimedia.png" position="right" %} </a>
+        <a href="/multimedia"> {% include figure.html image="assets/graphics/videos_media.png" position="right" %} </a>
       </div>
     </div>
   </div>

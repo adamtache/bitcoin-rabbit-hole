@@ -109,6 +109,7 @@ header {
   }
   .footer-links {
     margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -215,12 +216,22 @@ header {
 .home-buttons-top {
   display: flex;
   height: 50%;
+
+  img {
+    max-width: 225px;
+    max-height: 225px;
+  }
 }
 
 .home-buttons-bottom {
   display: flex;
   height: 50%;
   margin-bottom: 2rem;
+
+  img {
+    max-width: 225px;
+    max-height: 225px;
+  }
 }
 
 .home-buttons-left {
