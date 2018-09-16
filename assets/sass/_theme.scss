@@ -246,8 +246,24 @@ header {
   width: 100%;
 }
 
-.blog-button:hover {
-  background: url("assets/graphics.theblog_hover.png")
+.blog-button {
+  transition: content 0.2s linear;
+}
+
+.blog-button img:hover {
+  content: url("assets/graphics/theblog_hover.png")
+}
+
+.multimedia-button img:hover {
+  content: url("assets/graphics/videos_media_hover.png")
+}
+
+.writing-button img:hover {
+  content: url("assets/graphics/essays_research_hover.png")
+}
+
+.projects-companies-button img:hover {
+  content: url("assets/graphics/projects_companies_hover.png")
 }
 
 .resource-page {
