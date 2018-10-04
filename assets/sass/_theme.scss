@@ -230,51 +230,8 @@ header {
   width: 100%;
 }
 
-.blog-button {
-  background: url("assets/graphics/theblog.png");
-}
-
-.multimedia-button {
-  background: url("assets/graphics/videos_media.png");
-}
-
-.writing-button {
-  background: url("assets/graphics/essays_research.png");
-}
-
-.projects-companies-button {
-  background: url("assets/graphics/projects_companies.png");
-}
-
-.blog-button:hover {
-  background: url("assets/graphics/theblog_hover.png");
-}
-
-.multimedia-button:hover {
-  background: url("assets/graphics/videos_media_hover.png");
-}
-
-.writing-button:hover {
-  background: url("assets/graphics/essays_research_hover.png");
-}
-
-.projects-companies-button:hover {
-  background: url("assets/graphics/projects_companies_hover.png");
-}
-
 .blog-button, .multimedia-button, .writing-button, .projects-companies-button {
-  -webkit-transition: background 0.5s ease-in-out;
-  -moz-transition: background 0.5s ease-in-out;
-  -ms-transition: background 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out;
-}
-
-.blog-button, .multimedia-button, .writing-button, .projects-companies-button, .blog-button:hover, .multimedia-button:hover, .writing-button:hover, .projects-companies-button:hover {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: fixed;
   width: 225px;
-  height: 225px;
   margin: 15px;
 }
 
@@ -548,7 +505,7 @@ pre code {
 }
 
 @media only screen and (max-width: 650px) {
-  .home-buttons-top {
+  .home-buttons-top, .home-buttons-bottom {
     display: flex;
     height: 50%;
 
@@ -564,14 +521,6 @@ pre code {
 
   .home-buttons-top, .home-buttons-bottom {
     display: inline-grid;
-  }
-
-  .multimedia-button, .writing-button, .projects-companies-button, .multimedia-button:hover, .writing-button:hover, .projects-companies-button:hover {
-    margin-bottom: -3rem;
-  }
-
-  .blog-button, .blog-button:hover {
-    margin-bottom: -5rem;
   }
 }
 
