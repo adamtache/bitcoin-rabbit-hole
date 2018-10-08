@@ -8,5 +8,7 @@ btc-*.gem
 env
 collections/spreadsheet_to_resources_mds/env
 client_secret.json
-collections/spreadsheet_to_resource_mds/__pycache__/
-collections/spreadsheet_to_resources_mds/client_secret.json
+scripts/spreadsheet_to_resource_mds/__pycache__/
+scripts/spreadsheet_to_resources_mds/client_secret.json
+idea/
+__pycache__/

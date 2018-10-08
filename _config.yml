@@ -3,8 +3,7 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - btc.gemspec
-- collections/spreadsheet_to_resource_mds/__pycache__/
-- collections/spreadsheet_to_resource_mds/env
+- scripts/spreadsheet_to_resource_mds/
 
 plugins:
 - jekyll-sitemap
