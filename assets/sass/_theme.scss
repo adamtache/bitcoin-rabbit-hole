@@ -134,6 +134,10 @@ header {
     width: 62%;
   }
   margin: 0;
+
+  hr {
+    padding: 0.5em;
+  }
 }
 
 .share .button {
@@ -153,7 +157,7 @@ header {
     }
     &--left {
       margin-left: 0;
-      margin-right: 4%;
+      margin-right: 10%;
       order: -1;
     }
     &:hover {

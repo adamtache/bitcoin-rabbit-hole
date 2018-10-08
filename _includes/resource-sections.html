@@ -4,7 +4,7 @@
     <ul class="list list--posts">
         <li class="item item--post">
             <article class="article article--post typeset">
-                <h3>{{ section }}</h3>
+                <h3 id={{ section | slugify }}>{{ section }}</h3>
 
                 {% if page.title == "Essays & Research" %}
                     {% for writing in site.writings %}

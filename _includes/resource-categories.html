@@ -2,8 +2,7 @@
     <ul class="list list--categories">
         {% for section in page.sections %}
             <li class="item item--category">
-                {{ section }}
-                <a href="#{{ section | first | slugify }}">{{ section | first }}</a>
+                <a href="#{{ section | slugify }}">{{ section }}</a>
             </li>
         {% endfor %}
     </ul>
