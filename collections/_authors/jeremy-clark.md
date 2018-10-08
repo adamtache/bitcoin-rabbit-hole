@@ -1,6 +1,5 @@
 ---
-name: Jeremy Clark  
-twitter: gwern
+name: Jeremy Clark
 slug: jeremy-clark
-permalink: /author/jeremy-clark/
+permalink: /author/jeremy-clark
 ---

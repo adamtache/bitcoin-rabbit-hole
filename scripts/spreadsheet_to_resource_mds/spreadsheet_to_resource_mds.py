@@ -21,7 +21,7 @@ for row in sheet.get_all_values():
     resource_type = row[1].lower()
     resource_title_raw = row[2].title()
     resource_title = resource_title_raw.replace(":", "&#58")
-    resource_authors = row[3].split(',')
+    resource_authors = row[3].lstrip().rstrip().split(',')
     resource_url = row[4]
     resource_date = row[5]
     resource_excerpt = get_excerpt_from_page(resource_url)
