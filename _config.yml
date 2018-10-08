@@ -7,26 +7,12 @@ exclude:
 
 plugins:
 - jekyll-sitemap
-- jekyll-paginate
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-default-layout
-- jekyll-feed
-- jemoji
 - jekyll-postfiles
 
 include: ['_pages']
-
-paginate: 3
-paginate_path: _pages/page:num
-jekyll-mentions: https://twitter.com
-twitter:
-  username: adam_tache
-author: adam_tache
-social:
-  name: Adam Tache
-  links:
-    - https://twitter.com/adam_tache
 
 sass:
   add_charset: true

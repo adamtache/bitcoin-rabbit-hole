@@ -4,8 +4,10 @@ layout: default
 
 {% include page-header.html %}
 <main class="main container">
-  {{ content }}
-  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
+  <div class="content">
+    {{ content }}
+  </div>
+  {% if page.aside == true %}{% include site-aside.html align="left" %}{% endif %}
 </main>
 
 {% include footer.html %}

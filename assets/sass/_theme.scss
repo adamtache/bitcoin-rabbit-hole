@@ -112,17 +112,6 @@ header {
   }
 }
 
-.nav--paginator {
-  @include flexbox;
-  @include justify-content(space-between);
-  color: $captionColour;
-  text-align: center;
-}
-
-.pagination {
-  min-width: 20%;
-}
-
 .main {
   @include flexbox;
   @include flex-direction(column);
@@ -144,6 +133,7 @@ header {
   @include breakpoint(break-1) {
     width: 62%;
   }
+  margin: 0;
 }
 
 .share .button {
@@ -152,7 +142,7 @@ header {
 
 .aside {
   @include breakpoint(break-1) {
-    max-width: 34%;
+    max-width: 20%;
     margin-left: 4%;
     @include flex(1, 0, auto);
     opacity: 0.5;

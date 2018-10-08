@@ -1,6 +1,6 @@
 ---
 layout: writing
-title: That'S Not Bitcoin, That's Bcash
+title: That's Not Bitcoin, That's Bcash
 date: 2018-04-27
 categories: ['Bitcoin']
 author: ['StopAndDecrypt']
