@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 import gspread
 import json
+import os
 import re
 
 from oauth2client.service_account import ServiceAccountCredentials
@@ -19,8 +20,7 @@ for row in sheet.get_all_values():
 
     resource_categories = row[0].split(',')
     resource_type = row[1].lower()
-    resource_title_raw = row[2].title()
-    resource_title = resource_title_raw.replace(":", "&#58")
+    resource_title = row[2].title()
     resource_authors = row[3].lstrip().rstrip().split(',')
     resource_url = row[4]
     resource_date = row[5]
@@ -28,6 +28,9 @@ for row in sheet.get_all_values():
 
     for author in resource_authors:
         author_slug = get_valid_author_slug(author)
+        author_file_path = author_to_file_path(author_slug)
+        if os.path.exists(author_file_path) or author_file_path == "":
+            continue
 
         author_file = (
             f"---\n"
@@ -36,9 +39,12 @@ for row in sheet.get_all_values():
             f"permalink: /author/{author_slug}\n"
             f"---")
 
-        author_file_path = author_to_file_path(author_slug)
         with open(author_file_path, 'w') as f:
             f.write(author_file)
+
+    md_file_path = title_to_file_path(resource_title, resource_type)
+    if os.path.exists(md_file_path) or md_file_path == "":
+        continue
 
     md_file = (
                 f"---\n"
@@ -51,6 +57,5 @@ for row in sheet.get_all_values():
                 f"external_url: {resource_url}\n"
                 f"---")
 
-    md_file_path = title_to_file_path(resource_title_raw, resource_type)
     with open(md_file_path, 'w') as f:
         f.write(md_file)
