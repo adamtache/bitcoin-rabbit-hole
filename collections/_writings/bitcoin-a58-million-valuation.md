@@ -1,6 +1,6 @@
 ---
 layout: writing
-title: Bitcoin: A $5.8 Million Valuation
+title: Bitcoin&#58 A $5.8 Million Valuation
 date: 2017-07-25
 categories: ['Bitcoin']
 author: ['Mr. Game and Watch']

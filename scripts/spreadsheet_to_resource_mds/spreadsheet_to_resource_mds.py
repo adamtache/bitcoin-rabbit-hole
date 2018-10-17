@@ -20,7 +20,7 @@ for row in sheet.get_all_values():
 
     resource_categories = row[0].split(',')
     resource_type = row[1].lower()
-    resource_title = row[2].title()
+    resource_title = row[2].title().replace(":", "&#58")
     resource_authors = row[3].lstrip().rstrip().split(',')
     resource_url = row[4]
     resource_date = row[5]

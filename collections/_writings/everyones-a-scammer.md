@@ -1,6 +1,6 @@
 ---
 layout: writing
-title: Everyone'S A Scammer
+title: Everyone's A Scammer
 date: 2014-11-11
 categories: ['Nakamoto Institute']
 author: ['Michael Goldstein']

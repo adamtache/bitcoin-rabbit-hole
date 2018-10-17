@@ -1,6 +1,6 @@
 ---
 layout: media
-title: Mojonation: Building A Next Generation Distributed Data Service
+title: Mojonation&#58 Building A Next Generation Distributed Data Service
 date: 2014-02-25
 categories: ['Cypherpunk']
 author: ['Jim McCoy']
