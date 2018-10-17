@@ -1,6 +1,6 @@
 ---
 layout: writing
-title: Elliptic Curve Cryptography&#58 A Gentle Introduction
+title: Elliptic Curve Cryptography: A Gentle Introduction
 date: 2015-05-17
 categories: ['Technical']
 author: ['Andrea Corbellini']
