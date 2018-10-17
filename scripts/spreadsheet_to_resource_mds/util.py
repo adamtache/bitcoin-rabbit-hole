@@ -7,6 +7,7 @@ from goose3 import Goose
 
 GRAB_FIRST_TWO_SENTENCES_RE = '[.!?][\s]{1,2}(?=[A-Z])'
 REMOVE_SPECIAL_CHARACTERS_RE = '[^A-Za-z0-9]+'
+REMOVE_SPECIAL_CHARACTERS_KEEP_DASHES_RE = '[^A-Za-z0-9-]+'
 
 CLOSE_PAREN = ")"
 COLON = "&#58"
@@ -17,12 +18,13 @@ MARKDOWN_SUFFIX = ".md"
 OPEN_PAREN = "("
 PERIOD = "."
 QUOTE = "\""
+UNDERSCORE = "_"
 SPACE = " "
 
 def get_excerpt_from_page(url):
     """ Rudimentary excerpt creator."""
     regex_object = re.compile(GRAB_FIRST_TWO_SENTENCES_RE)
-    all_text_on_page = Goose().extract(url=url).cleaned_text if url != "" else ""
+    all_text_on_page = Goose().extract(url=url).cleaned_text if url != EMPTY else EMPTY
     sentences = regex_object.split(all_text_on_page, re.UNICODE)
 
     if len(sentences) == 0 or _is_common_bad_excerpt(sentences[0]):
@@ -52,7 +54,7 @@ def title_to_file_path(title, resource_type):
     elif (resource_type == 'multimedia' or resource_type == "media"):
         resources_folder_path = resources_folder_path + "multimedia/"
 
-    if title == "" or title == "_":
+    if title == EMPTY or title == UNDERSCORE:
         return EMPTY
     return "{}{}{}".format(
             resources_folder_path,
@@ -62,7 +64,7 @@ def title_to_file_path(title, resource_type):
 def author_to_file_path(valid_author_slug):
     """ Replaces extraneous symbols and cleans up accents and umlauts
         in author names. """
-    if valid_author_slug == "" or valid_author_slug == "_":
+    if valid_author_slug == EMPTY or valid_author_slug == UNDERSCORE:
         return EMPTY
     return "{}{}{}".format(
         "../../collections/_authors/",
@@ -70,23 +72,29 @@ def author_to_file_path(valid_author_slug):
         MARKDOWN_SUFFIX)
 
 def get_valid_author_slug(author):
-    return re.sub(PERIOD, EMPTY, unidecode.unidecode(
-            _remove_extraneous_symbols(re.sub(' ', '-', author.strip()))
-            )).lower()
+    return _remove_extraneous_symbols_keep_dashes(unidecode.unidecode(
+        re.sub(UNDERSCORE, DASH, re.sub(SPACE, DASH, author.strip().lower()))))
 
 def _camel_case_to_dashed(title):
     return re.sub('([a-z0-9])([A-Z])', r'\1-\2',
         re.sub('(.)([A-Z][a-z]+)',r'\1-\2', title)).lower()
 
 def _remove_extraneous_symbols(str):
-    str = _replace_apostrophe_char_with_char('s', str)
-    str = _replace_apostrophe_char_with_char('t', str)
-    str = _replace_apostrophe_char_with_char('S', str)
-    str = _replace_apostrophe_char_with_char('T', str)
+    return _remove_extraneous_symbols_with_regex(
+        str, REMOVE_SPECIAL_CHARACTERS_RE)
+
+def _remove_extraneous_symbols_keep_dashes(str):
+    return _remove_extraneous_symbols_with_regex(
+        str, REMOVE_SPECIAL_CHARACTERS_KEEP_DASHES_RE)
+
+def _remove_extraneous_symbols_with_regex(str, regex):
+    str = _replace_apostrophe_char_with_char(['s', 'S', 't', 'T'], str)
     return re.sub(
         '-+',
         '-',
-        re.sub(REMOVE_SPECIAL_CHARACTERS_RE, "", str))
+        re.sub(regex, EMPTY, str))
 
-def _replace_apostrophe_char_with_char(char, str):
-    return re.sub(r"(\w+)'{}".format(char), r'\1{}'.format(char.lower()), str)
+def _replace_apostrophe_char_with_char(chars, str):
+    for char in chars:
+        str = re.sub(r"(\w+)'{}".format(char), r'\1{}'.format(char.lower()), str)
+    return str
