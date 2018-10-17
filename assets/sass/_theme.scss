@@ -385,19 +385,6 @@ select {
   }
 }
 
-a,
-button,
-.button,
-input,
-textarea,
-select {
-  &:focus,
-  &:hover:focus {
-    outline: solid .12rem $focusColour;
-    outline-offset: -.12rem;
-  }
-}
-
 a:hover:focus {
   outline: none;
 }
