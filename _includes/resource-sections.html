@@ -21,9 +21,11 @@
                                                 {% unless forloop.last %} and {% endunless %}
                                             {% endfor %}
 
-                                            {% if page.date != "0000-00-00" %}
+                                            {% if writing.date != "1111-11-11" %}
                                                 {% include space-dot-space.html %}
-                                                <time datetime="{{ writing.date | date_to_xmlschema }}" class="time">{{ writing.date | date_to_string }}</time>
+                                                <time datetime="{{ writing.date | date_to_xmlschema }}" class="time">
+                                                    {{ writing.date | date_to_string }}
+                                                </time>
                                             {% endif %}
                                         {% endif %}
                                     {% endfor %}
@@ -48,9 +50,11 @@
                                             <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
                                             {% unless forloop.last %} and {% endunless %}
                                         {% endfor %}
-                                        {% if page.date != "0000-00-00" %}
+                                        {% if media.date != "1111-11-11" %}
                                             {% include space-dot-space.html %}
-                                            <time datetime="{{ media.date | date_to_xmlschema }}" class="time">{{ media.date | date_to_string }}</time>
+                                            <time datetime="{{ media.date | date_to_xmlschema }}" class="time">
+                                                {{ media.date | date_to_string }}
+                                            </time>
                                         {% endif %}
                                     {% endif %}
                                 {% endfor %}
@@ -75,7 +79,7 @@
                                         {% unless forloop.last %} and {% endunless %}
                                     {% endfor %}
 
-                                    {% if project_or_company.date != "0000-00-00" %}
+                                    {% if project_or_company.date != "1111-11-11" %}
                                         {% include space-dot-space.html %}
                                         <time datetime="{{ project_or_company.date | date_to_xmlschema }}" class="time">{{ project_or_company.date | date_to_string }}</time>
                                     {% endif %}

@@ -14,7 +14,7 @@ client = gspread.authorize(creds)
 
 sheet = client.open("Copy of Bitcoin Resources").sheet1
 
-NO_DATE = "0000-00-00"
+NO_DATE = "1111-11-11"
 
 for row in sheet.get_all_values():
     if row[0] == '':
@@ -25,7 +25,7 @@ for row in sheet.get_all_values():
     resource_title = row[2].title().replace(":", "&#58")
     resource_authors = row[3].lstrip().rstrip().split(',')
     resource_url = row[4]
-    resource_date = row[5] if len(row) == 6 else NO_DATE
+    resource_date = row[5] if row[5] != '' else NO_DATE
     resource_excerpt = get_excerpt_from_page(resource_url)
 
     for author in resource_authors:

@@ -4,7 +4,7 @@ By:
     <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
   {% unless forloop.last %} and {% endunless %}
 {% endfor %}
-{% include space-dot-space.html %}
-{% if page.date != "0000-00-00" %}
+{% if page.date != "1111-11-11" %}
+	{% include space-dot-space.html %}
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time>
 {% endif %}

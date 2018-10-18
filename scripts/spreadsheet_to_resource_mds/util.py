@@ -33,12 +33,12 @@ def get_excerpt_from_page(url):
     if len(sentences) == 0 or _is_common_bad_excerpt(sentences[0]):
         return EMPTY
     if len(sentences) == 1:
-        return _remove_duplicate_spaces_and_colons(sentences[0] + PERIOD.replace(COLON, EMPTY))
+        return _cleanup_excerpt(sentences[0] + PERIOD.replace(COLON, EMPTY))
     else:
-        return _remove_duplicate_spaces_and_colons((sentences[0] + PERIOD + SPACE + sentences[1] + PERIOD).replace(COLON, EMPTY))
+        return _cleanup_excerpt((sentences[0] + PERIOD + SPACE + sentences[1] + PERIOD).replace(COLON, EMPTY))
 
-def _remove_duplicate_spaces_and_colons(str):
-    return " ".join(str.split()).replace(COLON, EMPTY)
+def _cleanup_excerpt(str):
+    return " ".join(str.split()).replace(COLON, EMPTY).replace(":", "")
 
 def _is_common_bad_excerpt(sentence):
     common_bad_excerpts = [
