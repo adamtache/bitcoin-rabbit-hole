@@ -20,8 +20,11 @@
                                                 <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
                                                 {% unless forloop.last %} and {% endunless %}
                                             {% endfor %}
-                                            {% include space-dot-space.html %}
-                                            <time datetime="{{ writing.date | date_to_xmlschema }}" class="time">{{ writing.date | date_to_string }}</time>
+
+                                            {% if page.date != "0000-00-00" %}
+                                                {% include space-dot-space.html %}
+                                                <time datetime="{{ writing.date | date_to_xmlschema }}" class="time">{{ writing.date | date_to_string }}</time>
+                                            {% endif %}
                                         {% endif %}
                                     {% endfor %}
                                 </div>
@@ -45,8 +48,10 @@
                                             <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
                                             {% unless forloop.last %} and {% endunless %}
                                         {% endfor %}
-                                        {% include space-dot-space.html %}
-                                        <time datetime="{{ media.date | date_to_xmlschema }}" class="time">{{ media.date | date_to_string }}</time>
+                                        {% if page.date != "0000-00-00" %}
+                                            {% include space-dot-space.html %}
+                                            <time datetime="{{ media.date | date_to_xmlschema }}" class="time">{{ media.date | date_to_string }}</time>
+                                        {% endif %}
                                     {% endif %}
                                 {% endfor %}
                             </div>
@@ -56,21 +61,25 @@
                 {% endif %}
 
                 {% if page.title == "Projects & Companies" %}
-                    {% for media in site.projects_and_companies %}
+                    {% for project_or_company in site.projects_and_companies %}
                     <li>
                         <article class="article article--post">
                             <div class="resource-list-meta">
-                                {% for category in media.categories %}
+                                {% for category in projects_and_companies.categories %}
                                     {% if category == section %}
-                                    <h4><a href="{{ media.url }}">{{ media.title }}</a></h4>
+                                    <h4><a href="{{ project_or_company.url }}">{{ project_or_company.title }}</a></h4>
                                     By
-                                    {% for author in media.author %}
+                                    {% for author in project_or_company.author %}
                                         {% assign author_object = site.authors | where: "name", author | first %}
                                         <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
                                         {% unless forloop.last %} and {% endunless %}
                                     {% endfor %}
-                                    {% include space-dot-space.html %}
-                                    <time datetime="{{ media.date | date_to_xmlschema }}" class="time">{{ media.date | date_to_string }}</time>
+
+                                    {% if project_or_company.date != "0000-00-00" %}
+                                        {% include space-dot-space.html %}
+                                        <time datetime="{{ project_or_company.date | date_to_xmlschema }}" class="time">{{ project_or_company.date | date_to_string }}</time>
+                                    {% endif %}
+
                                     {% endif %}
                                 {% endfor %}
                             </div>

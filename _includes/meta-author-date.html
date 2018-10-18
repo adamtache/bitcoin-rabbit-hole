@@ -5,4 +5,6 @@ By:
   {% unless forloop.last %} and {% endunless %}
 {% endfor %}
 {% include space-dot-space.html %}
-<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time>
+{% if page.date != "0000-00-00" %}
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="time">{{ page.date | date_to_string }}</time>
+{% endif %}

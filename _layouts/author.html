@@ -13,21 +13,39 @@ layout: default
     {%- assign author_posts = site.posts
       | where: "author", page.name -%}
     {%- for post in author_posts -%}
-      <a href="{{ post.url }}">{{ post.title }}</a>{% include space-dot-space.html %}<time datetime="{{ post.date | date_to_xmlschema }}" class="time">{{ post.date | date_to_string }}</time>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {% if post.date != "0000-00-00" %}
+        {% include space-dot-space.html %}
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="time">
+          {{ post.date | date_to_string }}
+        </time>
+      {% endif %}
       <hr>
     {%- endfor -%}
 
     {%- assign author_writings = site.writings
       | where: "author", page.name -%}
     {%- for writing in author_writings -%}
-    <a href="{{ writing.url }}">{{ writing.title }}</a>{% include space-dot-space.html %}<time datetime="{{ writing.date | date_to_xmlschema }}" class="time">{{ writing.date | date_to_string }}</time>
+      <a href="{{ writing.url }}">{{ writing.title }}</a>
+      {% if post.date != "0000-00-00" %}
+        {% include space-dot-space.html %}
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="time">
+          {{ post.date | date_to_string }}
+        </time>
+      {% endif %}
     <hr>
     {%- endfor -%}
 
     {%- assign author_medias = site.multimedia
       | where: "author", page.name -%}
     {%- for media in author_medias -%}
-    <a href="{{ media.url }}">{{ media.title }}</a>{% include space-dot-space.html %}<time datetime="{{ media.date | date_to_xmlschema }}" class="time">{{ media.date | date_to_string }}</time>
+      <a href="{{ media.url }}">{{ media.title }}</a>
+      {% if post.date != "0000-00-00" %}
+        {% include space-dot-space.html %}
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="time">
+          {{ post.date | date_to_string }}
+        </time>
+      {% endif %}
     <hr>
     {%- endfor -%}
 

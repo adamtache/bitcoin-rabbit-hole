@@ -23,9 +23,12 @@ SPACE = " "
 
 def get_excerpt_from_page(url):
     """ Rudimentary excerpt creator."""
-    regex_object = re.compile(GRAB_FIRST_TWO_SENTENCES_RE)
-    all_text_on_page = Goose().extract(url=url).cleaned_text if url != EMPTY else EMPTY
-    sentences = regex_object.split(all_text_on_page, re.UNICODE)
+    try:
+        regex_object = re.compile(GRAB_FIRST_TWO_SENTENCES_RE)
+        all_text_on_page = Goose().extract(url=url).cleaned_text if url != EMPTY else EMPTY
+        sentences = regex_object.split(all_text_on_page, re.UNICODE)
+    except:
+        return EMPTY
 
     if len(sentences) == 0 or _is_common_bad_excerpt(sentences[0]):
         return EMPTY
@@ -58,7 +61,7 @@ def title_to_file_path(title, resource_type):
         return EMPTY
     return "{}{}{}".format(
             resources_folder_path,
-            _camel_case_to_dashed(_remove_extraneous_symbols(title)),
+            _camel_case_to_dashed(_remove_extraneous_symbols(title.replace("58", ""))),
             MARKDOWN_SUFFIX)
 
 def author_to_file_path(valid_author_slug):
