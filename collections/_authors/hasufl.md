@@ -1,5 +1,5 @@
 ---
 name: Hasufl
 slug: hasufl
-permalink: /author/hasfl
+permalink: /author/hasufl
 ---

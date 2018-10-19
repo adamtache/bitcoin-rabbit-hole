@@ -2,8 +2,8 @@
 layout: media
 title: Money, Banking, And Bitcoin
 date: 2018-05-10
-categories: ['Money and Austrian Econ']
+categories: ['Money and Austrian Economics']
 author: ['Lawrence White']
-excerpt: Matthew and Fernando interview Dr. Lawrence White, professor of economics at George Mason University and senior fellow at the Cato Institute.
+excerpt: The natural state of money is that it’s a creature of the market. But most modern economists don’t know that. I think it’s a widespread attitude that money is a creature of the state. Since 1971 when Nixon closed the gold window, the last link to gold was severed. Their control is less than perfect but in the long run they can correct course and keep inflation in bounds. They’ve been able to hit targets a lot better than a lot of us have expected. In 2013 at the Bretton-Woods conference, Paul Walker addressed that the current system is unstable but there were no answers to reform it. There isn’t a lot of consensus to reform it. There is concern that we don’t have any reason to be confident that the system won’t deteriorate dramatically. We’ve seen hyperinflation in some places and there’s no guarantees this won’t happen in the United States or Europe besides popular pressure. Inflation targeting leaves central banks in place with all their sovereignty to violate whatever commitments they have with impunity. My personal view is we were in a better place when we didn’t put all our eggs in one basket. But I don’t have any blueprint on how to get back to that or to institute a new commodity money system. Probably the most important thing now is to give people options. Make sure there are no legal obstacles to people who don’t trust the government’s currency to use something else, whether gold or bitcoin.
 external_url: https://soundcloud.com/cryptovoices/show-40-lawrence-white-money-banking-bitcoin
 ---

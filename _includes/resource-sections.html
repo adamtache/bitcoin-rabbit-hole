@@ -1,48 +1,48 @@
 {% for section in page.sections %}
-{% assign section_name = section | first %}
 <section class="section typeset">
     <ul class="list list--posts">
         <li class="item item--post">
             <article class="article article--post typeset">
-                <h3 id={{ section | slugify }}>{{ section }}</h3>
+                <b><h2 id={{ section | slugify }}>{{ section }}</h2></b>
 
                 {% if page.title == "Essays & Research" %}
-                    {% for writing in site.writings %}
+                    {% assign writings = site.writings | where_exp: "writing", "writing.categories contains section" %}
+                    {% for writing in writings %}
                         <li>
                             <article class="article article--post">
                                 <div class="resource-list-meta">
-                                    {% for category in writing.categories %}
-                                        {% if category == section %}
-                                            <h4><a href="{{ writing.url }}">{{ writing.title }}</a></h4>
-                                            By
-                                            {% for author in writing.author %}
-                                                {% assign author_object = site.authors | where: "name", author | first %}
-                                                <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
-                                                {% unless forloop.last %} and {% endunless %}
-                                            {% endfor %}
-
-                                            {% if writing.date != "1111-11-11" %}
-                                                {% include space-dot-space.html %}
-                                                <time datetime="{{ writing.date | date_to_xmlschema }}" class="time">
-                                                    {{ writing.date | date_to_string }}
-                                                </time>
-                                            {% endif %}
-                                        {% endif %}
+                                    <h4><a href="{{ writing.url }}">{{ writing.title }}</a></h4>
+                                    By
+                                    {% for author in writing.author %}
+                                        {% assign author_object = site.authors | where: "name", author | first %}
+                                        <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
+                                        {% unless forloop.last %} and {% endunless %}
                                     {% endfor %}
+
+                                    {% if writing.date != "1111-11-11" %}
+                                        {% include space-dot-space.html %}
+                                        <time datetime="{{ writing.date | date_to_xmlschema }}" class="time">
+                                            {{ writing.date | date_to_string }}
+                                        </time>
+                                    {% endif %}
+
+                                    {% include space-dot-space.html %}
+                                    <a href="{{ writing.external_url }}"> Link </a>
                                 </div>
                             </article>
                         </li>
+                        {% unless forloop.last %}<hr/>{% endunless %}
                     {% endfor %}
                 {% endif %}
 
 
                 {% if page.title == "Multimedia" %}
-                    {% for media in site.multimedia %}
-                    <li>
-                        <article class="article article--post">
-                            <div class="resource-list-meta">
-                                {% for category in media.categories %}
-                                    {% if category == section %}
+                    {% assign multimedias = site.multimedia | where_exp: "media", "media.categories contains section" %}
+                    {% for media in multimedias %}
+                        <li>
+                            <article class="article article--post">
+                                <div class="resource-list-meta">
+                                    {% for category in media.categories %}
                                         <h4><a href="{{ media.url }}">{{ media.title }}</a></h4>
                                         By
                                         {% for author in media.author %}
@@ -56,45 +56,49 @@
                                                 {{ media.date | date_to_string }}
                                             </time>
                                         {% endif %}
-                                    {% endif %}
-                                {% endfor %}
-                            </div>
-                        </article>
-                    </li>
+
+                                        {% include space-dot-space.html %}
+                                        <a href="{{ media.external_url }}"> Link </a>
+                                    {% endfor %}
+                                </div>
+                            </article>
+                        </li>
+                        {% unless forloop.last %}<hr/>{% endunless %}
                     {% endfor %}
                 {% endif %}
 
                 {% if page.title == "Projects & Companies" %}
-                    {% for project_or_company in site.projects_and_companies %}
-                    <li>
-                        <article class="article article--post">
-                            <div class="resource-list-meta">
-                                {% for category in projects_and_companies.categories %}
-                                    {% if category == section %}
-                                    <h4><a href="{{ project_or_company.url }}">{{ project_or_company.title }}</a></h4>
-                                    By
-                                    {% for author in project_or_company.author %}
-                                        {% assign author_object = site.authors | where: "name", author | first %}
-                                        <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
-                                        {% unless forloop.last %} and {% endunless %}
-                                    {% endfor %}
+                    {% assign projects_and_companies = site.projects_and_companies | where_exp: "project_or_company", "project_or_company.categories contains section" %}
+                    {% for project_or_company in projects_and_companies %}
+                        <li>
+                            <article class="article article--post">
+                                <div class="resource-list-meta">
+                                    {% for category in projects_and_companies.categories %}
+                                        <h4><a href="{{ project_or_company.url }}">{{ project_or_company.title }}</a></h4>
+                                        By
+                                        {% for author in project_or_company.author %}
+                                            {% assign author_object = site.authors | where: "name", author | first %}
+                                            <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
+                                            {% unless forloop.last %} and {% endunless %}
+                                        {% endfor %}
 
-                                    {% if project_or_company.date != "1111-11-11" %}
+                                        {% if project_or_company.date != "1111-11-11" %}
+                                            {% include space-dot-space.html %}
+                                            <time datetime="{{ project_or_company.date | date_to_xmlschema }}" class="time">{{ project_or_company.date | date_to_string }}</time>
+                                        {% endif %}
+
                                         {% include space-dot-space.html %}
-                                        <time datetime="{{ project_or_company.date | date_to_xmlschema }}" class="time">{{ project_or_company.date | date_to_string }}</time>
-                                    {% endif %}
-
-                                    {% endif %}
-                                {% endfor %}
-                            </div>
-                        </article>
-                    </li>
+                                        <a href="{{ project_or_company.external_url }}"> Link </a>
+                                    {% endfor %}
+                                </div>
+                            </article>
+                        </li>
+                        {% unless forloop.last %}<hr/>{% endunless %}
                     {% endfor %}
                 {% endif %}
 
         </article>
         </li>
     </ul>
-    {% unless forloop.last %}<hr/>{% endunless %}
 </section>
 {% endfor %}

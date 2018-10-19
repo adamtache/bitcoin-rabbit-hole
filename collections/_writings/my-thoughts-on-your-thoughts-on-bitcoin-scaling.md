@@ -1,9 +1,9 @@
 ---
 layout: writing
-title: My Thoughts On Your Thoughts (On Bitcoin Scaling)
+title: My Thoughts On Your Thoughts
 date: 2017-06-28
-categories: ['Bitcoin']
+categories: ['Scaling']
 author: ['Brian_Trollz']
-excerpt: The fact that this sits at the top of the page above your written thoughts is the epitome of irony Erik. Hopefully you will see why as I break down what I see in your thoughts.
+excerpt: Just that little innocuous thing that is the specific way a data structure is formatted has profound implications on the economics, incentives, and scalability of the system.
 external_url: https://medium.com/@thepiratewhocantbenamed/my-thoughts-on-your-thoughts-17474d800dda
 ---

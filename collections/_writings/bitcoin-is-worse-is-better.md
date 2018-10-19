@@ -1,9 +1,9 @@
 ---
 layout: writing
 title: Bitcoin-Is-Worse-Is-Better
-date: 2017-05-11
+date: 2011-05-27
 categories: ['Bitcoin']
 author: ['Gwern Branwen']
-excerpt: The irreversibility of Bitcoin transactions makes for some unusual dynamics in exchanges, along with the entire altcoin ecosystem (probably the most interesting altcoin scam to me was the Bytecoin scam+anonymity innovation). I learned of an interesting example in May 2013, when a Reddit post introduced me to a Tor hidden site which offers you double your money back if you send it some bitcoins.
+excerpt: In short, Bitcoin is a perfect example of Worse is Better. You can see the tradeoffs that Richard P. Gabriel enumerates - Bitcoin has many edge cases; it lacks many properties one would desire for a cryptocurrency; the whitepaper is badly under-specified; much of the behavior is socially determined by what the miners and clients collectively agree to accept, not by the protocol; etc. But it seems to work.
 external_url: https://www.gwern.net/Bitcoin-is-Worse-is-Better
 ---

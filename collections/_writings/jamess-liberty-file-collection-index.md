@@ -1,6 +1,6 @@
 ---
 layout: writing
-title: James'S Liberty File Collection Index
+title: James' Liberty File Collection Index
 date: 1111-11-11
 categories: ['Society']
 author: ['James A. Donald']

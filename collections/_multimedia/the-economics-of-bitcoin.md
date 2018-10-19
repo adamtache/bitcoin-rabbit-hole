@@ -2,8 +2,8 @@
 layout: media
 title: The Economics Of Bitcoin
 date: 1111-11-11
-categories: ['Money and Austrian Economics']
+categories: ['Blogs']
 author: ['Peter Surda']
-excerpt: I spent a lot of time researching the proposed BitLicense and associated issues, and today I submitted my comments to the NYDFS. Here it is. kindly allow me to add my own comments to the proposed regulation Title 23, Chapter I, Part 200, henceforth “BitLicense”.
+excerpt: While Mt. Gox has been long accused of running a fractional reserve system, the accusations increased during the last couple of days due to an escalation of the transaction malleability aspect of Bitcoin, and the inability of Mt. Gox to handle it on the technical, managerial and PR level.
 external_url: http://www.economicsofbitcoin.com/
 ---

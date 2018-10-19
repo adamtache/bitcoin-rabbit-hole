@@ -4,6 +4,6 @@ title: The Block
 date: 1111-11-11
 categories: ['Newsletters']
 author: ['Mike Dudas']
-excerpt: Sign up for our newsletter to start getting your news fix. Sign up for our newsletter.
+excerpt: The Block is building a global, inclusive community of crypto and blockchain enthusiasts. Join us for technical, economic and governance events, fireside chats, happy hours, and meet and greets. The Block is crypto simplified.
 external_url: https://www.theblockcrypto.com/
 ---

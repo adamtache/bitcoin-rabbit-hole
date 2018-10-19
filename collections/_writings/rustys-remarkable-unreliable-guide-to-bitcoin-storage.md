@@ -1,6 +1,6 @@
 ---
 layout: writing
-title: Rusty'S Remarkable Unreliable Guide To Bitcoin Storage
+title: Rusty's Remarkable Unreliable Guide To Bitcoin Storage
 date: 2016-06-25
 categories: ['Technical']
 author: ['Rusty Russell']
