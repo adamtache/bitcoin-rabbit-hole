@@ -19,7 +19,8 @@
                                         {% unless forloop.last %} and {% endunless %}
                                     {% endfor %}
 
-                                    {% if writing.date != "1111-11-11" %}
+                                    {% assign writing_date = writing.date | date: '%y%m%d' %}
+                                    {% if writing_date != "111111" %}
                                         {% include space-dot-space.html %}
                                         <time datetime="{{ writing.date | date_to_xmlschema }}" class="time">
                                             {{ writing.date | date_to_string }}
@@ -50,7 +51,9 @@
                                             <a href="{{ site.baseurl }}/author/{{ author_object.slug }}"> {{ author }}</a>
                                             {% unless forloop.last %} and {% endunless %}
                                         {% endfor %}
-                                        {% if media.date != "1111-11-11" %}
+
+                                        {% assign media_date = media.date | date: '%y%m%d' %}
+                                        {% if media_date != "111111" %}
                                             {% include space-dot-space.html %}
                                             <time datetime="{{ media.date | date_to_xmlschema }}" class="time">
                                                 {{ media.date | date_to_string }}
@@ -82,9 +85,12 @@
                                             {% unless forloop.last %} and {% endunless %}
                                         {% endfor %}
 
-                                        {% if project_or_company.date != "1111-11-11" %}
+                                        {% assign project_or_company_date = project_or_company.date | date: '%y%m%d' %}
+                                        {% if project_or_company_date != "111111" %}
                                             {% include space-dot-space.html %}
-                                            <time datetime="{{ project_or_company.date | date_to_xmlschema }}" class="time">{{ project_or_company.date | date_to_string }}</time>
+                                            <time datetime="{{ project_or_company.date | date_to_xmlschema }}" class="time">
+                                                {{ project_or_company.date | date_to_string }}
+                                            </time>
                                         {% endif %}
 
                                         {% include space-dot-space.html %}

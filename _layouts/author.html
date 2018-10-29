@@ -14,7 +14,8 @@ layout: default
       | where: "author", page.name -%}
     {%- for post in author_posts -%}
       <a href="{{ post.url }}">{{ post.title }}</a>
-      {% if post.date != "1111-11-11" %}
+      {% assign post_date = post.date | date: '%y%m%d' %}
+      {% if post_date != "111111" %}
         {% include space-dot-space.html %}
         <time datetime="{{ post.date | date_to_xmlschema }}" class="time">
           {{ post.date | date_to_string }}
@@ -40,7 +41,8 @@ layout: default
       | where: "author", page.name -%}
     {%- for media in author_medias -%}
       <a href="{{ media.url }}">{{ media.title }}</a>
-      {% if media.date != "1111-11-11" %}
+      {% assign media_date = media.date | date: '%y%m%d' %}
+      {% if media_date != "111111" %}
         {% include space-dot-space.html %}
         <time datetime="{{ media.date | date_to_xmlschema }}" class="time">
           {{ media.date | date_to_string }}
