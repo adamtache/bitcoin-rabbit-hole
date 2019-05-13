@@ -31,10 +31,6 @@ collections:
     title: Authors
     permalink: /authors/
     output: true
-  projects_and_companies:
-    title: Projects and Companies
-    output: true
-    permalink: /projects_and_companies/
   multimedia:
     title: Multimedia
     output: true
@@ -82,7 +78,6 @@ menu_items:
   Home: /
   Essays & Research: /writings/
   Multimedia: /multimedia/
-  Projects & Companies: /projects_and_companies/
   Blog: /blog/
 
 social_links:

@@ -11,7 +11,7 @@ Bitcoin](https://hackernoon.com/the-many-faces-of-bitcoin-1c298570d191), which
 discussed four schools of thought of Bitcoin. This article will analyze these
 perspectives by discussing trade-offs, philosophical divides within the
 community, and expected behaviors of the proposed systems.
-
+<br/><br/>
 #### Index
 
 * Bitcoin as Money
@@ -23,9 +23,7 @@ community, and expected behaviors of the proposed systems.
 * Upper-Layer Systems and Alt-Coins
 
 *****
-
 ### Bitcoin As Money
-
 Bitcoin presents us with an opportunity to reinvent gold, or even rethink money
 for the digital future. A number of economists have suggested that it may be
 more appropriate to evaluate items based on their degree of moneyness.
@@ -34,29 +32,29 @@ on the contrary, many items can play a monetary role and some items can play
 this role more effectively than others. In a number of ways, bitcoins have a
 high degree of moneyness. They are more portable, durable, divisible, and scarce
 than both gold and government fiat currency.
-
+<br/><br/>
 As of today, bitcoins can best be described as digital commodities with monetary
 properties. According to the Bitcoin Maximalist
 [interpretation](https://twitter.com/NickSzabo4/status/954225789129469952) of
 monetary history, it is likely that a new, scarce form of money would evolve
 roughly along the following lines:
-
+<br/><br/>
 1. Collectible
 2. Store of Value
 3. Medium of Exchange
 4. Unit of Account.
-
+<br/><br/>
 Proponents of bitcoins as digital cash believe that utility should initially
 take precedence over store of value, and prioritize attaining the medium of
 exchange role before store of value by making payments as cheap as possible.
-
+<br/><br/>
 Those who believe bitcoin will become the future global monetary standard
 ascribe current volatility to the fact that bitcoin is undergoing the process of
 monetization, and that a global cognitive shift is slowly occurring. In their
 view, despite great volatility, the long-term parabolic ascent of the price is a
 testament to more and more people believing in a future world where Bitcoin is
 widely used.
-
+<br/><br/>
 Crypto-[Austrians](https://mises.org/what-austrian-economics) who consider
 themselves [Rothbardians](https://www.mises.org/profile/murray-n-rothbard), such
 as author [Saifedean Ammous](https://twitter.com/saifedean), believe that
@@ -65,7 +63,7 @@ ever invented. They believe that bitcoin, with its fixed monetary supply, is the
 only fair form of money, as well as one which allows for the most efficient
 capital allocation by individuals and most efficient price signalling by the
 market as a whole.
-
+<br/><br/>
 Many individuals in this group are against the idea of fractional-reserve
 banking and consider it to be fraudulent. They believe that a fractional-reserve
 banking system is unlikely to emerge atop bitcoin, as bitcoins lack the physical
@@ -75,12 +73,12 @@ control over the money supply, transmission, and the monetary regime at large.
 The governments had so much control that they were able to get rid of the
 gold-standard (which was organically chosen by the market over centuries) and
 introduce their own fiat standards, not backed by any commodity.
-
+<br/><br/>
 These individuals believe that fractional-reserve systems are simply
 unsustainable in the long run without lenders of last resort, which do not
 inherently exist in Bitcoin, and that people would be unwilling to accept
 bitcoin-substitutes in the market.
-
+<br/><br/>
 Those in the “[Free
 Banking](https://www.alt-m.org/2015/07/18/hayek-and-free-banking/)” wing of the
 Austrian school, such as [George
@@ -91,13 +89,13 @@ believe that bitcoin’s strictly fixed-supply and lack of lenders of last resor
 do not technically prevent a competitive system of fractional-reserve banks and
 entities arising atop bitcoin, or in an economy where bitcoin is the defacto
 monetary standard.
-
+<br/><br/>
 It is clear that there is a chance that bitcoin can, at the very least, emerge
 as a mildly volatile digital commodity, a store of value akin to digital gold.
 However, doubts remain whether it will transcend the raw store of value role and
 achieve low enough volatility to become a global medium of exchange and a unit
 of account.
-
+<br/><br/>
 Some believe that, due to its strictly inelastic supply, bitcoin is unlikely to
 be stable in its purchasing power anytime soon, if ever, and that people prefer
 for their day-to-day currency to be stable in purchasing power. These people
@@ -106,7 +104,7 @@ flexible and self-regulating monetary policies built in. For example,
 [stablecoins](http://juliankohtx.com/stablecoins-and-the-story-of-money/) aim to
 peg their market value against another form of value, such as the USD or a
 basket of goods, using an algorithmic central bank.
-
+<br/><br/>
 Others
 [believe](https://medium.com/@rextar4444/a-neo-gold-standard-bitcoins-optimal-use-case-62d7fbb2f76f)
 that, despite bitcoin’s strictly inelastic supply, bitcoin is a perfect solution
@@ -119,22 +117,22 @@ index to achieve international relational stability of all state currencies. In
 response to increasing demand for bitcoin, some believe banks will value target
 their currencies against bitcoin as a basis for the standardization of the value
 of money.
-
+<br/><br/>
 #### Deflationary Death Spiral
-
+<br/><br/>
 Mainstream, Keynesian, and Monetarist economists have expressed concerns with
 Bitcoin’s fixed-supply. They fear the possibility of harsh deflationary
 pressures if bitcoin becomes the predominant currency through the process known
 as
 [hyperbitcoinization](https://nakamotoinstitute.org/mempool/hyperbitcoinization/).
-
+<br/><br/>
 Their fear is that the inability to expand the money supply would result in
 bitcoin’s purchasing power growing by 2–3% per annum, roughly in line with the
 growth rates of global economic output. Some have expressed concerns that
 deflationary economics might reduce aggregate demand in the present and the
 near-term, result in excessive savings and hoarding of money, and produce less
 consumption, investment and entrepreneurial risk-taking by individuals.
-
+<br/><br/>
 Austrian economists believe that the fears associated with a deflationary form
 of money are [overblown](https://mises.org/library/deflationary-spiral-bogey)
 and that the ‘deflationary spiral’ is a myth. Austrian’s counter the Keynesian
@@ -143,7 +141,7 @@ by reminding them that this spending is merely delayed into the future. People
 will now have a lower time-preference and thatinstead of buying “useless” things
 with their “hot potato” decaying money, they will turn their attention to
 long-term productivity.
-
+<br/><br/>
 They also believe that business profit margins will not be hurt because not only
 would product prices, but also business costs, deflate at the same rate, leaving
 the profit margins unchanged. Austrians believe that deflation is absolutely
@@ -151,7 +149,7 @@ normal, and absent central control on the money supply, both capitalism and
 technology are naturally deflationary phenomenons.This can be seen in the
 less-regulated electronics industry, where increased storage/memory/compute
 capacities are becoming cheaper every year.
-
+<br/><br/>
 According to Austrians, it is the *central bank inflationary fiat printing* that
 exacerbates recessions and business cycles, as the perpetually-decaying money
 embeds the citizenry constant anxiety and stress, resulting in not well
@@ -159,16 +157,16 @@ though-out investments and expenditures, collectively referred to as
 ‘malinvestment’. These malinvestments are typically inefficient allocations of
 capital, which are unlikely to result in personal gains, societal gains,
 productivity, or capital stock.
-
+<br/><br/>
 ### Roles of Full Nodes & Miners in Bitcoin & Bitcoin Cash
 
 **The Scaling Debate**
-
+<br/><br/>
 The debate over how to scale Bitcoin is very polarizing, and is about scaling
 throughput, also known as transactions per second (TPS). The main contention is
 how much it should cost to run a [full node](https://bitcoin.org/en/full-node),
 and what the role of full nodes and miners should be in the the system.
-
+<br/><br/>
 In July 2010, Satoshi Nakamoto, the creator of Bitcoin,
 [supposedly](https://www.reddit.com/r/Bitcoin/comments/3giend/citation_needed_satoshis_reason_for_blocksize/ctygzmi/)
 added a 1 MB maximum block size limit as an anti-DoS (Denial of Service)
@@ -176,7 +174,7 @@ prevention mechanism. This 1 MB block size limit stood in place, and until
 transaction volume increased heavily in 2017, the blocks were never close to
 full capacity. When this limit was introduced, 1 MB was hundreds of times the
 size of an average block.
-
+<br/><br/>
 In August 2017, an update called Segregated Witness (SegWit for short, see
 dedicated section below) was activated, which increased the amount of data that
 could be stored in a block to above 1 MB. Taking many by surprise, at around the
@@ -186,19 +184,19 @@ bitcoins as digital gold. The developers of this fork quickly implemented 32 MB
 blocks and are planning to increase the limit much further, which would allow
 for more on-chain transactions per block and cheaper fees but make it more
 expensive to run a full node.
-
+<br/><br/>
 Factors that influence the cost of running a full node include required
 bandwidth, the size of the UTXO set (see
 [this](https://www.safaribooksonline.com/library/view/mastering-bitcoin/9781491902639/ch05.html)
 primer on Bitcoin transactions if you’re not familiar with the UTXO concept),
 and required CPU, RAM, and disk space, which are all impacted by the block size.
-
+<br/><br/>
 Those who favor small blocks view them as essential to maintain decentralization
 of the system by allowing any user to afford validation using a full node, and to
 develop a [fee
 market](https://medium.com/@jimmysong/the-fee-market-explained-76b294947b42) in
 order to guarantee miner compensation as the block reward decreases.
-
+<br/><br/>
 The proponents of Bitcoin Cash, “big blockers,” view a block size limit as an
 artificial limit maintained through a centralized planning mechanism in the form
 of consensus rules. Many prefer miners selecting the size of blocks they are
@@ -206,9 +204,9 @@ willing to create based on market conditions. There are other blockchain
 projects where this is the case, such as Ethereum where miners can
 [vote](https://www.etherchain.org/tools/gasLimitVoting) to adjust the gas limit,
 which is analogous to the block size in Bitcoin, a certain factor each block.
-
+<br/><br/>
 **The perspective of “small blockers” (Bitcoin project)**
-
+<br/><br/>
 > Full nodes relay transactions and blocks and do full verification of the data
 > they relay to other members of the (full node) network, enforcing consensus
 rules and serving as watchful eyes against potentially malicious miners.
@@ -232,28 +230,29 @@ and degrades privacy by requiring users to connect to other nodes.
 > can prove a transaction is included in a block without downloading the entire
 blockchain, are incapable of trustless and complete validation.
 
+<br/><br/>
 At this time, even low-end computing devices such as a [Raspberry
 Pi](https://www.renewable-energy-now.org/2017/07/raspberry-pi-bitcoin-full-node-english/)
 can serve as a functioning full node. Many desire a future where even
 smartphones can serve as full nodes.
-
+<br/><br/>
 In order for a full node to perform validation, it must propagate the entire
 UTXO set that it derived by processing the entire chain. The UTXO set can shrink
 by users and companies consolidating outputs, but it has been
 [shown](http://statoshi.info/dashboard/db/unspent-transaction-output-set) to
 steadily increase over time and can grow infinitely in size.
-
+<br/><br/>
 By primarily using the blockchain as a settlement layer for off-chain
 transactions and optimizing space efficiency through technological improvements,
 the UTXO set is managed much more efficiently, block propagation latency and
 initial blockchain syncing times are reduced, and the amount of bandwidth, CPU
 power, RAM, and disk space required to run a full node are minimized.
-
+<br/><br/>
 Off-chain payment-channels (like the [Lightning
 Network](https://lightning.network/lightning-network-summary.pdf)) are being
 developed, which will be able to settle thousands or millions of transactions in
 a single transaction on the Bitcoin blockchain.
-
+<br/><br/>
 Although miners are the only entities that can produce new candidate blocks,
 economic full node operators signal and provide the incentive for miners to
 create valid blocks by rejecting invalid ones. If a miner were to produce an
@@ -261,11 +260,11 @@ invalid block, such as one with differing consensus rules than those defined by
 the rest of the network (e.g. tampering with issuance rate of new bitcoins or
 altering the maximum number of bitcoins), full nodes would automatically ignore
 it even if a majority of the hash power accepted the block as valid.
-
+<br/><br/>
 The ability for full nodes to reject invalid blocks and trustlessly verify
 transactions leads to the saying “Don’t Trust, Verify” — and this is why full
 nodes are deemed the network that miners are being paid to serve.
-
+<br/><br/>
 This is not to say that miners don’t have any control at all. Both full node
 operators and miners power aspects of the system, despite having differing
 roles. Miners can choose what transactions they include in blocks
@@ -273,21 +272,21 @@ roles. Miners can choose what transactions they include in blocks
 new blocks, whereas merchants and other full node operators (including mining
 pool node operators) determine validity of blocks and transactions, enforcing
 consensus rules.
-
+<br/><br/>
 A User Activated Soft Fork (UASF) [event](http://www.uasf.co/) in 2017
 demonstrated that users operating full nodes were able to push miners to
 activate SegWit despite only a minority of miners initially signaling that they
 were in favor of the update.
-
+<br/><br/>
 **The perspective of “big blockers” (Bitcoin Cash project)**
-
+<br/><br/>
 Bitcoin Cash proponents look to scale toward unlimited block size and do not
 believe in the importance of full nodes being cheap to run for all. They claim
 the best version of Bitcoin was outlined by Satoshi Nakamoto in his original
 whitepaper, blog posts, and emails. They believe Satoshi only considered miners
 to be the network and that consensus should be handled purely through hash
 power.
-
+<br/><br/>
 Some big blockers believe that users simply transacting never need to run full
 nodes, but others recommend
 [incrementally](https://web.archive.org/web/20150213020502/https://blog.bitcoinfoundation.org/a-scalability-roadmap/)
@@ -308,9 +307,9 @@ transactions and serving merkle-branch proofs to SPV clients.
 > There is nothing sacred about non-monetary Bitcoin consensus rules, which should
 > be allowed to [emerge](https://www.bitcoinunlimited.info/emergent-consensus)
 through a market process.
-
+<br/><br/>
 From [Mark Wilcox](http://markwilcox.com/articles/03/):
-
+<br/><br/>
 > “The whole point of the Proof of Work game is that nodes cannot be trusted. The
 > only thing we can trust is the difficulty of solving the problem, and the
 economic interests of everyone involved. This means that, quite crucially,
@@ -318,20 +317,21 @@ economic interests of everyone involved. This means that, quite crucially,
 collectively need to protect the network. But the whole point of rewarding nodes
 that contribute hashpower is to free everyone else of the burden of having to
 worry about attacks on monetary policy or denial of service.”
-
+>
+<br/><br/>
 BCH proponents equate decentralization to competition and the network topology
 of miners instead of full node cost. They rejected SegWit, and Bitcoin Cash was
 their response. They encourage on-chain applications, such as the social network
 [Memo](https://memo.cash/), which small blockers would likely view as spam and
 encourage to be developed on upper-layer systems instead.
-
+<br/><br/>
 ### Addressing “Satoshi’s Original Vision”
-
+<br/><br/>
 **The perspective of “small blockers” (Bitcoin project)**
-
+<br/><br/>
 BTC proponents believe that appealing to Satoshi’s words is a logical fallacy of
 appealing to authority, and that Satoshi should no longer matter.
-
+<br/><br/>
 > “If you see the Buddha or a Buddha, kill him.”
 
 They generally refer to BCH proponents as whitepaper “religious fundamentalists”
@@ -340,26 +340,26 @@ inception. They view BTC as a far superior and more decentralized system than
 BCH due to the ability for full nodes to serve as a p2p network governance
 mechanism ([not a
 democracy](https://medium.com/@beautyon_/democracy-has-nothing-to-do-with-the-way-bitcoin-works-it-is-a-political-system-where-a-group-of-efb37a627415)).
-
+<br/><br/>
 Many view BCH as a
 [fraudulent](https://hackernoon.com/thats-not-bitcoin-that-s-bcash-f730f0d0a837)
 project guided by leaders attempting to take over the Bitcoin brand and
 establish a centralized, miner-controlled system that requires trust in
 third-parties.
-
+<br/><br/>
 BTC proponents also
 [mention](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-April/002417.html)
 that Satoshi laid the groundwork for the Lightning Network through a
 high-frequency trading payment channel design. They also feel Satoshi’s original
 design proved to be impossible without SPV fraud proofs, described in the SPV
 section below.
-
+<br/><br/>
 Satoshi’s last words about block size were written in December 2010 during a
 [discussion](https://bitcointalk.org/index.php?topic=1790.msg28917#msg28917)
 about BitDNS, a proposal to use Bitcoin for domain name issuance which led to
 the creation of a merged-mined blockchain called
 [Namecoin](https://www.namecoin.org/).
-
+<br/><br/>
 > “BitDNS users might be completely liberal about adding any large data features
 > since relatively few domain registrars are needed, while Bitcoin users might get
 increasingly tyrannical about limiting the size of the chain so it’s easy for
@@ -367,32 +367,32 @@ lots of users and small devices.”
 
 Here, Satoshi alluded to the scaling debate and suggested limiting the size of
 the blockchain might gain consensus.
-
+<br/><br/>
 Bitcoin Cash did not receive social consensus to be called Bitcoin based on the
 User Activated Soft Fork, market cap, and hash rate. Instead, Bitcoin Cash hard
 forked to create a new network, whereas Segregated Witness was an update to the
 original Bitcoin network in which old software still functions.
-
+<br/><br/>
 **The perspective of “big blockers” (Bitcoin Cash project)**
-
+<br/><br/>
 BCH proponents pronounce that “Bitcoin Cash is Bitcoin” as they believe Bitcoin
 was designed to scale on-chain without ‘non-mining full nodes’ limiting the
 throughput of the system. Instead, they believe miner’s nodes are the real full
 nodes and note that Satoshi referred to miners as ‘nodes’ in his writings.
-
+<br/><br/>
 From Satoshi Nakamoto:
-
+<br/><br/>
 > “Only people trying to create new coins would need to run network nodes. At
 > first, most users would run network nodes, but as the network grows beyond a
 certain point, it would be left more and more to specialists with server farms
 of specialized hardware.”
-
+>
 > “The current system where every user is a network node is not the intended
 > configuration for large scale. That would be like every Usenet user runs their
 own NNTP server. The design supports letting users just be users. The more
 burden it is to run a node, the fewer nodes there will be. Those few nodes will
 be big server farms.”
-
+<br/><br/>
 BCH proponents feel small blockers
 [co-opted](https://derekmagill.com/2018/05/30/crash-course-bitcoin-core/) the
 Bitcoin project to create a settlement network with high on-chain fees when
@@ -401,7 +401,7 @@ understanding of Proof-of-Work (PoW) game theory, as they
 [interpret](https://www.reddit.com/r/btc/comments/5zawlw/satoshi_whitepapers_longest_chain_is_bitcoin_rule/dewpjza/)
 Satoshi’s descriptions of PoW as mining being the intended consensus mechanism.
 
-*****
+<br/><br/>
 
 BTC proponents strongly
 [object](https://www.reddit.com/r/Bitcoin/comments/5j6758/myth_nakamoto_consensus_decides_the_rules_for/dbe7kbb/)
@@ -410,76 +410,73 @@ even in the [original](https://github.com/trottier/original-bitcoin) node
 software, the longest PoW chain rule only applied to resolving disputes between
 multiple chains using the same consensus rules, and nodes had the option to
 generate coins or not.
-
+<br/><br/>
 ### Role of SPV
-
 In contrast to full nodes, the type of software for lightweight Bitcoin clients
 is SPV (Simple Payment Verification). SPV clients allow a user to connect to one
 or more nodes (i.e. from a smartphone), determine the latest block with longest
 PoW chain, and request [block
 headers](https://bitcoin.org/en/developer-reference#block-headers) (80 bytes
 each) from the node(s).
-
+<br/><br/>
 As described in section 8 of the whitepaper, a user can obtain the merkle branch
 which confirms their transaction is inside a block with a valid block header and
 proof of work. Further confirmations (new blocks on top of the other block)
 demonstrate further work was done.
-
+<br/><br/>
 SPV clients cannot validate blocks or consensus rules themselves, so they must
 trust the validation of the node(s) they are connected to.
-
+<br/><br/>
 A technique to increase SPV security, among others, was proposed by Satoshi in
 the whitepaper to allow nodes to alert SPV clients when invalid blocks are
 detected. Theoretical [fraud
 proofs](http://www.truthcoin.info/blog/fraud-proofs/) could prove the existence
 of invalid blocks with minimal resources required, but a viable implementation
-has not been discovered that proves to be DoS resistant.
+has not been discovered that proves to be DoS resi<br/><br/>stant.
 
 Although fraud proofs are not implemented today, SegWit enables them to be
 integrated into Bitcoin with a [soft-fork](https://en.bitcoin.it/wiki/Softfork),
 which is a change that is backwards compatible with old clients and tightens or
 adds new rules.
-
+<br/><br/>
 ### Segregated Witness
-
 A 2017 soft-fork to BTC called Segregated Witness, or SegWit for short, was
 activated as the result of a multiple year scaling debate. It was primarily a
 bug fix to an issue involving the malleability of transactions, but also adds
 more space for transactions and enables easier future updates and extensions
 through soft forks.
-
+<br/><br/>
 #### What is malleability?
-
 Before SegWit, there were malleable (changeable) parts of transactions. For
 example, a node relaying a transaction or a miner including it in a block could
 add extra bytes to the transaction’s
 [signature](https://bitcoin.org/en/developer-guide#term-signature). This changes
 the ID, which is a cryptographic hash of the entire transaction, including the
 signature.
-
+<br/><br/>
 Although there is malleability in other computer software, in the case of
 Bitcoin, changing the transaction ID after the transaction propagated to the
 network prevented wallet software to track transactions by ID, users from
 performing certain types of transactions, and developers from creating certain
 types of smart contracts.
-
+<br/><br/>
 For example, a valid transaction can spend an unconfirmed output (not yet
 included in a block) as an input to another transaction in the same block. If
 the transaction ID of the unconfirmed output was malleated, the first
 transaction would be confirmed as it’s still valid, but the second transaction
 would be invalid because the transaction data would include an invalid
 Previous tx attribute.
-
+<br/><br/>
 Miners, full nodes, and users can choose to use SegWit or not, since it was a
 soft fork. As of May 2018, transactions with SegWit inputs make up approximately
 [35%](https://transactionfee.info/charts/payments/segwit) of transactions, and
 SegWit nodes are at approximately
 [95%](https://luke.dashjr.org/programs/bitcoin/files/charts/segwit.html)
 distribution.
-
+<br/><br/>
 The rest of this section is fairly technical, so feel free to skim or skip to
 the “Bitcoin Maximalism” section if you are a beginner.
-
+<br/><br/>
 Witness data refers to signatures and unlocking scripts. With SegWit, miners
 “segregate the witness” by placing the witness data in a separate merkle tree
 (the data structure inside a block that holds transactions) called the witness
@@ -488,14 +485,14 @@ in the coinbase transaction, which is the transaction that miners use to pay
 themselves newly minted bitcoins. Therefore, signatures for SegWit transactions
 are still included in blocks, since the coinbase transaction affects the merkle
 root hash that is stored in the block header of a block.
-
+<br/><br/>
 If miners choose to not update to SegWit, then they can’t mine blocks with
 SegWit inputs, as to them these are non-standard transactions. They can still
 receive SegWit transactions with the witness structure stripped.
-
+<br/><br/>
 **The SegWit update (for more detail see [SegWit
 benefits](https://bitcoincore.org/en/2016/01/26/segwit-benefits/)):**
-
+<br/><br/>
 * Phases out block size in favor of block weight. Currently, blocks can have at
 most 4 million weight units (WU). A byte in the original block structure weighs
 4 WU, whereas a byte in the witness structure only weighs 1 WU. For more, see
@@ -525,9 +522,9 @@ Transactions](https://www.elementsproject.org/elements/confidential-transactions
 [ASICBoost](https://blog.bitmex.com/an-overview-of-the-covert-asicboost-allegation-2/)
 ineffective (though [some](http://www.truthcoin.info/blog/asicboost-worthless/)
 dispute the relevance of ASICBoost in the first place).
-
+<br/><br/>
 **The following are arguments against SegWit:**
-
+<br/><br/>
 * [Some](http://thebitcoin.foundation/) users prefer that Bitcoin developers
 change Satoshi’s codebase as little as possible.
 * SegWit and the Lightning Network do not solve the scaling debate because users
@@ -541,14 +538,13 @@ including any transactions involving SegWit inputs.
 * Jihan Wu, the CEO of Bitmain which is the largest mining ASIC manufacturer,
 [called](https://twitter.com/JihanWu/status/868896110760181760) SegWit
 transactions “unfairly cheap” due to the discount on witness data.
-
+<br/><br/>
 ### Bitcoin Maximalism
-
 There are different flavors of Bitcoin Maximalists, but they all believe that
 Bitcoin is the best and most secure blockchain which has the strongest network
 effect, most desirable monetary policy, and a highly-capable scripting language
 built which allows for future development.
-
+<br/><br/>
 Bitcoiners generally believe the idea of a ‘token economy’ reveals a deep
 misunderstanding of monetary systems as a whole and view [tokens as snake
 oil](https://nakamotoinstitute.org/mempool/appcoins-are-snake-oil/). They
@@ -558,14 +554,13 @@ that value accrues to the money held, not necessarily the one transacted with,
 and the long tail of ‘tokens’ will suffer from extremely high velocity,
 rendering them with little to no value accrual and serving as unnecessary
 friction even if abstracted away from the end user.
-
+<br/><br/>
 ### Upper-Layer Systems and Alt-Coins
-
 Many Bitcoiners view
 [alt-coins](https://nakamotoinstitute.org/mempool/the-problem-with-altcoins/) as
 testing grounds for features that may eventually be integrated into Bitcoin if
 desirable by users.
-
+<br/><br/>
 It is theoretically possible to copy [almost
 any](http://www.drivechain.info/faq/index.html) blockchain, even a giant block
 [one](http://www.truthcoin.info/blog/gigachain/), and put it on a Bitcoin
@@ -573,10 +568,10 @@ sidechain. Paul Sztorc’s [Drivechain](http://www.drivechain.info/) project,
 which is currently under development, would allow these blockchains to inherit
 Bitcoin’s mining security, although it requires a soft-fork and is awaiting more
 extensive peer review.
-
+<br/><br/>
 There are three main categories of changes that would (likely) never be
 integrated into Bitcoin’s base layer.
-
+<br/><br/>
 * Alternative **consensus mechanisms** to replace Nakamoto Consensus, such as
 Proof-of-Stake
 [(Tendermint](https://tendermint.readthedocs.io/en/master/introduction.html#what-is-tendermint),
@@ -598,7 +593,7 @@ governance, such as [Decred](https://voting.decred.org/) or
 System](https://medium.com/dfinity/the-dfinity-blockchain-nervous-system-a5dd1783288e)
 AI governance, or Bitcoin Unlimited’s [miners
 voting](https://www.bitcoinunlimited.info/solutions/miners).
-
+<br/><br/>
 Bitcoiners generally take
 [issue](https://download.wpsoftware.net/bitcoin/pos.pdf) with Proof-of-Stake
 (PoS) where validators propose and vote on blocks instead of solving
@@ -609,11 +604,11 @@ and discount PoS due to its “subjective” nature, which means participation i
 the network requires subjective information like social information. This
 contrasts to PoW objectivity where nodes necessarily arrive at the current state
 by observing the heaviest PoW chain.
-
+<br/><br/>
 Many view PoS as a digital version of the fiat-money system, with PoS validation
 being anti-competitive in comparison to mining and lacking any ties to
 real-world value (energy).
-
+<br/><br/>
 Meanwhile, PoS advocates have “[learned to love” weak
 subjectivity](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity/)
 and aim to simulate the security of PoW through threats of economic penalties
@@ -622,11 +617,11 @@ burning physical energy. They deem PoW as energy wasteful, and think it’s
 possible to design a PoS protocol that is more secure, decentralized, offers
 faster block times, and is more flexible than PoW, which is “limited” by
 physics.
-
+<br/><br/>
 In distributed systems terms, Nakamoto Consensus favors liveness (availability)
 over safety (consistency) and achieves probabilistic finality of transactions
 that increases with the number of new blocks.
-
+<br/><br/>
 Currently, with Casper’s PoS, for example, economic finality is to be achieved
 once validators fully commit to a block and comes at the cost of some
 availability. Because finality requires some upper-bound synchrony[
@@ -634,31 +629,31 @@ assumption](https://medium.com/@Vlad_Zamfir/the-history-of-casper-chapter-3-70fe
 extraordinary events could theoretically partition a significant portion of the
 network or shut down the entire network for a greater amount of time than this
 upper-bound validator response time.
-
+<br/><br/>
 This could cause either some partitions to lack the majority of votes needed to
 come to consensus or the lack of ability for the network to choose a canonical
 chain when the partition or shut down ends. This could end with liveness or
 safety faults requiring human action, whereas with PoW, network partitions
 create temporary forks, which are necessarily resolved through the heaviest
 chain once the partition is resolved.
-
+<br/><br/>
 There is overwhelming consensus that there should be no experimentation and as
 little changes made as possible to the base BTC layer, and that payment channels
 and sidechains should not weaken the security of the base layer. Some users are
 enthusiastic about the potential of upper-layer systems to bootstrap further
 utility on Bitcoin.
-
+<br/><br/>
 The main philosophy is to have a hyper-decentralized, hyper-secure base layer
 that is used to bootstrap security for slightly more insecure protocols on top
 layers.
-
-**Lightning Network**
-
+<br/><br/>
+### Lightning Network
+<br/><br/>
 Proponents of the Lightning Network consider it to be the most feasible solution
 to the current Bitcoin scalability problem, allowing people to transact nearly
 without limits using peer-to-peer payment channels and smart contracts, while
 using the *main* Bitcoin chain for occasional settlement purposes.
-
+<br/><br/>
 Despite only being conceptualized three years ago, and only being in beta for
 several months, the Lightning Network is already seeing a wave of innovations,
 such as [Dual-Funded
@@ -668,7 +663,7 @@ Watchtowers,
 [Eltoo](https://blockstream.com/2018/04/30/eltoo-next-lightning.html), Atomic
 Swaps, and more all covered
 [here](https://bitcoinmagazine.com/articles/future-bitcoin-what-lightning-could-look/).
-
+<br/><br/>
 One common concern about second-layer solutions is that they will negatively
 impact miners revenue by taking more transactions off-chain. Initial
 [research](https://arxiv.org/pdf/1712.10222.pdf),
@@ -676,29 +671,26 @@ impact miners revenue by taking more transactions off-chain. Initial
 at Scaling Bitcoin 2017, estimated that miner revenue could increase after 20
 million users were using the Lightning Network, although decrease under that
 threshold.
-
+<br/><br/>
 It is important to note that Lightning Network is an extremely new, unproven and
 immature system. However, many developers believe that it will greatly improve
 the scalability of Bitcoin and enable cheap micro-transactions, paving a way for
 Bitcoin to potentially be used as an effective medium of exchange and true
 global currency.
-
+<br/><br/>
 At the very least, Lightning Network occupies a niche, which will be valuable in
 itself. And at the most, we haven’t even scratched the surface of the upside,
 potential, and capabilities enabled by the Lightning Network, such as
 third-layer projects.
-
-*****
-
+<br/><br/>
 ### Conclusion
-
 Bitcoin is the original, longest-lasting cryptocurrency with the highest levels
 of hashpower, network effects, liquidity, market capitalization, and arguably
 the highest amount of “HODLers of last resort.” This article attempted to
 outline the so-called ‘small blocker’ and ‘big blocker’ positions on the most
 notable changes, milestones and debates throughout Bitcoin’s past and its
 near-term future.
-
+<br/><br/>
 The open-source, global and decentralized nature of these digital money-forms
 makes the governance of these systems complex and even minor changes contentious
 and controversial. Almost 10 years into its history, Bitcoin and other
@@ -706,5 +698,6 @@ cryptocurrencies as an asset class are beginning to challenge monetary metals as
 the defacto store of value assets of the future, as well as challenge existing
 global payment rails and mechanisms. We believe that the future is bright for
 Bitcoin and its spiritual brethren.
-
+<br/><br/>
 _Originally posted on [Hackernoon](https://hackernoon.com/bitcoin-past-and-future-f2feba1f419d)_.
+<br/><br/>
