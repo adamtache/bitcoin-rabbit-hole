@@ -1,6 +1,6 @@
 ---
 layout: writing
-title: Triffen Dilemma
+title: Triffin Dilemma
 date: 1111-11-11
 categories: ['Money']
 author: ['Wikipedia']
